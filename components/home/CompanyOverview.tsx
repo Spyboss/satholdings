@@ -13,8 +13,8 @@ export default function CompanyOverview() {
                     construction, manufacturing, and import &amp; trading.
                 </p>
                 <p className="text-neutral-600 leading-relaxed mb-4">
-                    With a legacy built on government infrastructure projects — including
-                    Southern Highway works and RDA contracts — we bring the same
+                    With a legacy built on government infrastructure projects - including
+                    Southern Highway works and RDA contracts - we bring the same
                     discipline, quality assurance, and reliability to every venture we
                     undertake.
                 </p>

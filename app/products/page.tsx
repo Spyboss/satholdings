@@ -9,7 +9,7 @@ import { createBreadcrumbSchema } from "@/lib/structuredData";
 export const metadata: Metadata = {
     title: "Import & Trading",
     description:
-        "SAT Holdings product catalog — SAT Electronics (rice cookers, electric kettles), SAT Aluminum Profiles, and SAT Bathware. Quality products sourced globally.",
+        "SAT Holdings product catalog - SAT Electronics (rice cookers, electric kettles), SAT Aluminum Profiles, and SAT Bathware. Quality products sourced globally.",
 };
 
 const breadcrumbSchema = createBreadcrumbSchema([
@@ -26,7 +26,7 @@ export default function ProductsPage() {
             />
             <PageHero
                 title="Import & Trading"
-                subtitle="Quality products sourced globally — electronics, aluminum profiles, and bathware for the Sri Lankan market."
+                subtitle="Quality products sourced globally - electronics, aluminum profiles, and bathware for the Sri Lankan market."
             />
 
             {PRODUCT_CATEGORIES.map((category, index) => (

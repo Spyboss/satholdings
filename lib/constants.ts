@@ -49,7 +49,7 @@ export const DIVISIONS: Division[] = [
     {
         slug: "trading",
         title: "Import & Trading",
-        tagline: "Electronics, aluminum profiles, and bathware — sourced globally.",
+        tagline: "Electronics, aluminum profiles, and bathware, sourced globally.",
         href: "/products",
         icon: "📦",
     },

@@ -10,7 +10,7 @@ export default function CtaSection() {
                 </h2>
                 <p className="text-neutral-600 mb-8 max-w-lg mx-auto">
                     Whether it&apos;s a construction project, manufacturing partnership,
-                    or product inquiry — we&apos;re here to help.
+                    or product inquiry, we&apos;re here to help.
                 </p>
                 <Button href="/contact" variant="primary">
                     Get in Touch

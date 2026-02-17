@@ -3,7 +3,7 @@ import Button from "@/components/ui/Button";
 export default function HeroSection() {
     return (
         <section className="relative bg-primary overflow-hidden">
-            {/* Background pattern — subtle geometric overlay */}
+            {/* Background pattern - subtle geometric overlay */}
             <div className="absolute inset-0 opacity-5">
                 <div
                     className="absolute inset-0"
@@ -32,7 +32,7 @@ export default function HeroSection() {
                     {/* Sub-headline */}
                     <p className="mt-6 text-lg sm:text-xl text-neutral-300 max-w-2xl leading-relaxed">
                         From constructing national infrastructure to manufacturing
-                        consumer electronics — SAT Holdings delivers excellence across
+                        consumer electronics - SAT Holdings delivers excellence across
                         engineering, manufacturing, and trading.
                     </p>
 

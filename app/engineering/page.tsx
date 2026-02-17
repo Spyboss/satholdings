@@ -9,7 +9,7 @@ import { createBreadcrumbSchema } from "@/lib/structuredData";
 export const metadata: Metadata = {
     title: "Engineering & Construction",
     description:
-        "SAT Holdings engineering division — building construction, road construction, soil protection, and heavy machinery hiring across Sri Lanka.",
+        "SAT Holdings engineering division - building construction, road construction, soil protection, and heavy machinery hiring across Sri Lanka.",
 };
 
 const breadcrumbSchema = createBreadcrumbSchema([
@@ -55,7 +55,7 @@ export default function EngineeringPage() {
                     </h2>
                     <p className="text-neutral-600 leading-relaxed mb-6">
                         Every project undergoes our rigorous three-stage quality assurance
-                        process — from material inspection through construction monitoring
+                        process, from material inspection through construction monitoring
                         to final delivery verification.
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
@@ -83,12 +83,12 @@ export default function EngineeringPage() {
                         Machinery Fleet
                     </h2>
                     <p className="text-neutral-600 leading-relaxed">
-                        Our fleet of 43+ heavy machinery units — including excavators,
-                        loaders, rollers, and transport vehicles — is available for hire
+                        Our fleet of 43+ heavy machinery units -                         including excavators,
+                        loaders, rollers, and transport vehicles, is available for hire
                         across Sri Lanka. All equipment is maintained to international
                         safety standards.
                     </p>
-                    {/* Machinery gallery placeholder — add real images when available */}
+                    {/* Machinery gallery placeholder - add real images when available */}
                     <p className="mt-8 text-sm text-neutral-400 italic">
                         Machinery gallery images coming soon.
                     </p>

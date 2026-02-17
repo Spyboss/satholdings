@@ -7,7 +7,7 @@ import { createBreadcrumbSchema } from "@/lib/structuredData";
 export const metadata: Metadata = {
     title: "Manufacturing",
     description:
-        "Sri Lanka's first rice cooker manufacturing facility — SAT Holdings Manufacturing division. Quality assurance, local production, future expansion.",
+        "Sri Lanka's first rice cooker manufacturing facility - SAT Holdings Manufacturing division. Quality assurance, local production, future expansion.",
 };
 
 const breadcrumbSchema = createBreadcrumbSchema([
@@ -24,7 +24,7 @@ export default function ManufacturingPage() {
             />
             <PageHero
                 title="Manufacturing"
-                subtitle="Operating Sri Lanka's first rice cooker manufacturing facility — proudly Made in Sri Lanka."
+                subtitle="Operating Sri Lanka's first rice cooker manufacturing facility, proudly Made in Sri Lanka."
             />
 
             {/* The Story */}
@@ -138,7 +138,7 @@ export default function ManufacturingPage() {
                     <p className="text-neutral-600 leading-relaxed">
                         Our roadmap includes expanding into additional consumer electronics
                         categories, increasing production capacity, and exploring export
-                        markets — all while maintaining the quality standards that define
+                        markets, all while maintaining the quality standards that define
                         SAT Holdings manufacturing.
                     </p>
                 </div>

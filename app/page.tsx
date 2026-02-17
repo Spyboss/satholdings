@@ -6,9 +6,9 @@ import DivisionsOverview from "@/components/home/DivisionsOverview";
 import CtaSection from "@/components/home/CtaSection";
 
 export const metadata: Metadata = {
-    title: "SAT Holdings — Engineering · Manufacturing · Trading",
+    title: "SAT Holdings - Engineering · Manufacturing · Trading",
     description:
-        "SAT Holdings Pvt Ltd — a diversified Sri Lankan corporation in engineering & construction, rice cooker manufacturing, and import & trading. 21+ projects, 24+ clients.",
+        "SAT Holdings Pvt Ltd - a diversified Sri Lankan corporation in engineering & construction, rice cooker manufacturing, and import & trading. 21+ projects, 24+ clients.",
 };
 
 export default function HomePage() {

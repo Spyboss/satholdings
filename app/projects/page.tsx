@@ -7,7 +7,7 @@ import { createBreadcrumbSchema } from "@/lib/structuredData";
 export const metadata: Metadata = {
     title: "Projects & Case Studies",
     description:
-        "SAT Holdings project portfolio — Southern Highway works, RDA projects, and government infrastructure. Detailed case studies showcasing engineering excellence.",
+        "SAT Holdings project portfolio - Southern Highway works, RDA projects, and government infrastructure. Detailed case studies showcasing engineering excellence.",
 };
 
 const breadcrumbSchema = createBreadcrumbSchema([

@@ -21,13 +21,13 @@ const outfit = Outfit({
 export const metadata: Metadata = {
     metadataBase: new URL(COMPANY.domain),
     title: {
-        default: `${COMPANY.name} — Engineering · Manufacturing · Trading`,
-        template: `%s — ${COMPANY.name}`,
+        default: `${COMPANY.name} - Engineering · Manufacturing · Trading`,
+        template: `%s - ${COMPANY.name}`,
     },
     description:
         "SAT Holdings is a diversified Sri Lankan corporation operating in engineering & construction, rice cooker manufacturing, and import & trading.",
     openGraph: {
-        title: `${COMPANY.name} — Engineering · Manufacturing · Trading`,
+        title: `${COMPANY.name} - Engineering · Manufacturing · Trading`,
         description:
             "SAT Holdings is a diversified Sri Lankan corporation operating in engineering & construction, rice cooker manufacturing, and import & trading.",
         url: COMPANY.domain,
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: `${COMPANY.name} — Engineering · Manufacturing · Trading`,
+        title: `${COMPANY.name} - Engineering · Manufacturing · Trading`,
         description:
             "SAT Holdings is a diversified Sri Lankan corporation operating in engineering & construction, rice cooker manufacturing, and import & trading.",
     },

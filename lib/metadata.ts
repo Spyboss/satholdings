@@ -14,7 +14,7 @@ export function createMetadata({
     path?: string;
     ogImage?: string;
 }): Metadata {
-    const fullTitle = `${title} — ${COMPANY.name}`;
+    const fullTitle = `${title} - ${COMPANY.name}`;
     const url = `${BASE_URL}${path}`;
     const image = ogImage || `${BASE_URL}/assets/og/default.png`;
 

@@ -164,7 +164,7 @@ export default function ContactPage() {
                                     value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY || ""}
                                 />
 
-                                {/* Honeypot — hidden from real users */}
+                                {/* Honeypot - hidden from real users */}
                                 <input
                                     type="checkbox"
                                     name="botcheck"
