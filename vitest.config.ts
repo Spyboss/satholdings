@@ -1,10 +1,10 @@
 import { defineConfig } from "vitest/config";
-import type { PluginOption } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
-    plugins: [react() as PluginOption],
+    // @ts-expect-error - vite and vitest version mismatch
+    plugins: [react()],
     test: {
         environment: "jsdom",
         globals: true,
