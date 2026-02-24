@@ -6,14 +6,15 @@ export const COMPANY = {
     legalName: "SAT Holdings (Private) Limited",
     domain: "https://satholdings.lk",
     email: "holdingssat@gmail.com",
-    phone: ["+94 77 123 4567", "+94 11 234 5678"],
+    phone: ["+94 77 234 6283", "+94 77 741 0011", "+94 11 216 0620"],
     address: {
-        street: "Colombo Road",
+        street: "1028/B7 Midway Park, Liyanagoda, Pannipitiya",
         city: "Colombo",
         province: "Western Province",
         country: "Sri Lanka",
         countryCode: "LK",
     },
+    tagline: "Building Dreams, Empowering Lifestyles.",
     stats: {
         projects: 21,
         clients: 24,
@@ -192,7 +193,7 @@ export const FAQS = [
     },
     {
         question: "How can I request a quote for services?",
-        answer: "You can request a quote by visiting our Contact page, calling us at +94 77 123 4567, or emailing us at holdingssat@gmail.com. Our team typically responds within 24-48 hours.",
+        answer:         "You can request a quote by visiting our Contact page, calling us at +94 77 234 6283, or emailing us at holdingssat@gmail.com. Our team typically responds within 24-48 hours.",
     },
     {
         question: "What areas does SAT Holdings serve?",

@@ -1,4 +1,5 @@
 import Button from "@/components/ui/Button";
+import { COMPANY } from "@/lib/constants";
 
 export default function HeroSection() {
     return (
@@ -34,6 +35,11 @@ export default function HeroSection() {
                         From constructing national infrastructure to manufacturing
                         consumer electronics - SAT Holdings delivers excellence across
                         engineering, manufacturing, and trading.
+                    </p>
+
+                    {/* Tagline */}
+                    <p className="mt-4 text-sm sm:text-base text-accent font-medium italic">
+                        {COMPANY.tagline}
                     </p>
 
                     {/* CTAs */}
