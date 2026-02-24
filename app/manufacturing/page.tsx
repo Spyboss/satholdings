@@ -52,7 +52,7 @@ export default function ManufacturingPage() {
                 <div className="max-w-3xl mx-auto text-center">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                        src="/assets/icons/sri-lanka.svg"
+                        src="https://res.cloudinary.com/dtnzmhngi/image/upload/v1771931976/1200px-Flag_of_Sri_Lanka.svg_mtkcw9.png"
                         alt="Sri Lanka"
                         className="w-12 h-8 mx-auto mb-4"
                     />
