@@ -1,49 +1,58 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
-import { NAV_LINKS, COMPANY } from "@/lib/constants";
+
+const headerLinks = [
+    { label: "Home", href: "/" },
+    { label: "About Us", href: "#portfolio" },
+    { label: "Our Businesses", href: "#portfolio" },
+    { label: "Sustainability", href: "/projects" },
+    { label: "Careers", href: "/contact" },
+    { label: "News", href: "#news" },
+    { label: "Contact Us", href: "/contact" },
+];
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="sticky top-0 z-50 bg-white border-b border-neutral-200">
-            <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-16">
-                    {/* Logo / Company Name */}
-                    <Link href="/" className="flex items-center gap-3 group">
-                        <span className="text-xl font-bold text-primary font-heading tracking-tight">
-                            {COMPANY.name.replace(" Pvt Ltd", "")}
-                        </span>
+        <header className="sticky top-0 z-50 border-b border-black/10 bg-white/95 backdrop-blur">
+            <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="flex h-[76px] items-center justify-between gap-4">
+                    <Link href="/" className="shrink-0">
+                        <Image
+                            src="https://res.cloudinary.com/dtnzmhngi/image/upload/v1772171307/WhatsApp_Image_2026-02-27_at_11.08.37_hf8int.jpg"
+                            alt="SAT Holdings logo"
+                            width={240}
+                            height={240}
+                            className="h-12 w-auto sm:h-14"
+                        />
                     </Link>
 
-                    {/* Desktop Navigation */}
-                    <ul className="hidden md:flex items-center gap-1">
-                        {NAV_LINKS.map((link) => (
-                            <li key={link.href}>
+                    <ul className="hidden items-center gap-1 md:flex">
+                        {headerLinks.map((link, index) => (
+                            <li key={`${link.href}-${link.label}`} className="flex items-center">
                                 <Link
                                     href={link.href}
-                                    className="px-3 py-2 text-sm font-medium text-neutral-700 hover:text-primary rounded-md transition-colors"
+                                    className="px-2 py-2 text-xs font-bold uppercase tracking-wide text-slate-800 transition hover:text-[#1666ab] lg:px-3"
                                 >
                                     {link.label}
                                 </Link>
+                                {index < headerLinks.length - 1 && (
+                                    <span className="text-black/35">|</span>
+                                )}
                             </li>
                         ))}
-                        <li className="ml-2">
-                            <Link
-                                href="/contact"
-                                className="px-4 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-primary-light transition-colors"
-                            >
-                                Get a Quote
-                            </Link>
+                        <li className="ml-2 border-l border-black/15 pl-3 text-xs font-extrabold uppercase tracking-wide text-slate-800">
+                            ⌕ Search
                         </li>
                     </ul>
 
-                    {/* Mobile Menu Button */}
                     <button
                         type="button"
-                        className="md:hidden p-2 text-neutral-700 hover:text-primary"
+                        className="p-2 text-slate-700 transition hover:text-[#1666ab] md:hidden"
                         onClick={() => setIsOpen(!isOpen)}
                         aria-label={isOpen ? "Close menu" : "Open menu"}
                         aria-expanded={isOpen}
@@ -73,29 +82,22 @@ export default function Navbar() {
                     </button>
                 </div>
 
-                {/* Mobile Navigation */}
                 {isOpen && (
-                    <div className="md:hidden border-t border-neutral-200 py-3">
+                    <div className="border-t border-black/10 py-3 md:hidden">
                         <ul className="flex flex-col gap-1">
-                            {NAV_LINKS.map((link) => (
-                                <li key={link.href}>
+                            {headerLinks.map((link) => (
+                                <li key={`${link.href}-${link.label}`}>
                                     <Link
                                         href={link.href}
-                                        className="block px-3 py-2 text-sm font-medium text-neutral-700 hover:text-primary hover:bg-neutral-50 rounded-md transition-colors"
+                                        className="block rounded-md px-3 py-2 text-sm font-bold uppercase tracking-wide text-slate-700 hover:bg-slate-50 hover:text-[#1666ab]"
                                         onClick={() => setIsOpen(false)}
                                     >
                                         {link.label}
                                     </Link>
                                 </li>
                             ))}
-                            <li className="mt-2 px-3">
-                                <Link
-                                    href="/contact"
-                                    className="block w-full text-center px-4 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-primary-light transition-colors"
-                                    onClick={() => setIsOpen(false)}
-                                >
-                                    Get a Quote
-                                </Link>
+                            <li className="px-3 py-2 text-sm font-bold uppercase tracking-wide text-slate-700">
+                                ⌕ Search
                             </li>
                         </ul>
                     </div>
