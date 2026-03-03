@@ -70,7 +70,7 @@ function FooterIcon({ type }: { type: "sitemap" | "newsletter" | "social" | "bra
 }
 
 function SocialIcon({ type }: { type: (typeof socialLinks)[number]["icon"] }) {
-    const common = "h-3.5 w-3.5";
+    const common = "h-4 w-4";
 
     if (type === "linkedin") {
         return (
