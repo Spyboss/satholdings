@@ -9,9 +9,24 @@ const siteMap = [
 ];
 
 const socialLinks = [
-    { label: "LinkedIn", short: "in", href: "https://www.linkedin.com", icon: "linkedin" },
-    { label: "Facebook", short: "fb", href: "https://www.facebook.com", icon: "facebook" },
-    { label: "YouTube", short: "yt", href: "https://www.youtube.com", icon: "youtube" },
+    {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com",
+        icon: "linkedin",
+        hoverClass: "hover:border-[#72c0ff] hover:bg-[#0a66c2]",
+    },
+    {
+        label: "Facebook",
+        href: "https://www.facebook.com",
+        icon: "facebook",
+        hoverClass: "hover:border-[#8ab4ff] hover:bg-[#1877f2]",
+    },
+    {
+        label: "YouTube",
+        href: "https://www.youtube.com",
+        icon: "youtube",
+        hoverClass: "hover:border-[#ff8f8f] hover:bg-[#ff0000]",
+    },
 ] as const;
 
 function FooterIcon({ type }: { type: "sitemap" | "newsletter" | "social" | "brand" }) {
@@ -151,21 +166,22 @@ export default function Footer() {
                             </span>
                             Social Media
                         </h4>
-                        <div className="mt-3 flex gap-2">
+                        <p className="mt-3 text-xs leading-relaxed text-slate-300">
+                            Follow us for updates, project highlights, and company news.
+                        </p>
+                        <div className="mt-4 flex gap-3">
                             {socialLinks.map((social) => (
                                 <a
                                     key={social.label}
                                     href={social.href}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="group flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white/10 text-slate-200 transition hover:border-[#58b4ff] hover:bg-[#2b8bde] hover:text-white hover:shadow-[0_0_18px_rgba(56,160,255,0.45)]"
+                                    className={`group relative flex h-11 w-11 items-center justify-center rounded-full border border-white/25 bg-white/10 text-slate-100 shadow-[inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:text-white hover:shadow-[0_10px_24px_rgba(0,0,0,0.25)] ${social.hoverClass}`}
                                     aria-label={social.label}
                                     title={social.label}
                                 >
-                                    <span className="group-hover:hidden text-[10px] font-extrabold uppercase tracking-wide">
-                                        {social.short}
-                                    </span>
-                                    <span className="hidden group-hover:block">
+                                    <span className="absolute inset-0 rounded-full bg-gradient-to-br from-white/15 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                                    <span className="relative transition-transform duration-300 group-hover:scale-110">
                                         <SocialIcon type={social.icon} />
                                     </span>
                                 </a>
