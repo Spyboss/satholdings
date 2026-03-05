@@ -26,7 +26,7 @@ export default function ProductsPage() {
             />
             <PageHero
                 title="Import & Trading"
-                subtitle="Quality products sourced globally - electronics, aluminum profiles, and bathware for the Sri Lankan market."
+                subtitle="A balanced portfolio of locally manufactured and globally sourced products for Sri Lankan households and construction projects."
             />
 
             {PRODUCT_CATEGORIES.map((category, index) => (

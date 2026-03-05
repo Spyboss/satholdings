@@ -5,7 +5,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
     title: "SAT Holdings Group - Diversified Business Portfolio",
     description:
-        "SAT Holdings Group portfolio: electronics, construction, energy, and agro services. Empowering progress with sustainable growth.",
+        "SAT Holdings Group across engineering, trading, renewable energy, agro, and local appliance manufacturing in Sri Lanka.",
 };
 
 const heroPanels = [
@@ -21,8 +21,7 @@ const heroPanels = [
     },
     {
         title: "Energy",
-        image:
-            "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1800&q=80",
+        image: "/assets/solar/solar-01.jpg",
     },
     {
         title: "Agro",
@@ -34,7 +33,7 @@ const heroPanels = [
 const portfolioCards = [
     {
         title: "SAT Electronics (Pvt) Ltd",
-        subtitle: "Innovating the Digital Frontier",
+        subtitle: "Made In Sri Lanka Rice Cooker Manufacturing",
         cta: "View Electronics",
         logo: "https://res.cloudinary.com/dtnzmhngi/image/upload/v1772171307/WhatsApp_Image_2026-02-27_at_11.08.39_j5iktg.jpg",
         href: "/products",
@@ -42,7 +41,7 @@ const portfolioCards = [
     },
     {
         title: "SAT Holdings (Pvt) Ltd",
-        subtitle: "Building Infrastructure and Global Trading",
+        subtitle: "Engineering, Construction, And Strategic Imports",
         cta: "View Construction",
         logo: "https://res.cloudinary.com/dtnzmhngi/image/upload/v1772171307/WhatsApp_Image_2026-02-27_at_11.08.37_hf8int.jpg",
         href: "/engineering",
@@ -50,7 +49,7 @@ const portfolioCards = [
     },
     {
         title: "SAT Energy Solutions Pvt Ltd",
-        subtitle: "Powering a Sustainable Future",
+        subtitle: "500kW Grid-Connected Solar In Tangalle",
         cta: "View Energy",
         logo: "https://res.cloudinary.com/dtnzmhngi/image/upload/v1772171307/WhatsApp_Image_2026-02-27_at_11.08.38_ap0zlp.jpg",
         href: "/projects",
@@ -58,7 +57,7 @@ const portfolioCards = [
     },
     {
         title: "SAT Green Agro (Pvt) Ltd",
-        subtitle: "Securing Food Through Smart Farming",
+        subtitle: "Technology-Driven Agriculture And Food Security",
         cta: "View Agro",
         logo: "https://res.cloudinary.com/dtnzmhngi/image/upload/v1772171307/img11_z2uvkb.jpg",
         href: "/contact",
@@ -68,54 +67,63 @@ const portfolioCards = [
 
 const keyStats = [
     { value: "4", label: "Major Industries", icon: "industries" },
-    { value: "2012", label: "Est. 2012", icon: "calendar" },
-    { value: "500+", label: "Employees", icon: "team" },
-    { value: "300+", label: "Completed Projects", icon: "projects" },
+    { value: "2017", label: "Founded In 2017", icon: "calendar" },
+    { value: "21+", label: "Major Projects", icon: "projects" },
+    { value: "24+", label: "Corporate Clients", icon: "team" },
 ] as const;
 
 const reasons = [
     {
-        title: "Integration",
-        text: "Engineering and digital teams run on shared operations.",
+        title: "Safe Work Culture",
+        text: "Healthy and secure work practices across sites and operations.",
         icon: "integration",
     },
     {
-        title: "Innovation",
-        text: "Modern systems and practical R&D power long-term growth.",
+        title: "Integrity",
+        text: "Transparent and principled decision-making in every project.",
         icon: "innovation",
     },
     {
-        title: "Reliability",
-        text: "Trusted delivery across public and private sector programs.",
+        title: "Social Responsibility",
+        text: "Projects designed with long-term community benefit in mind.",
         icon: "reliability",
     },
     {
-        title: "Sustainability",
-        text: "Growth strategy balances impact, profitability, and environment.",
+        title: "Governance",
+        text: "Structured oversight to sustain quality and accountability.",
         icon: "sustainability",
     },
 ] as const;
 
-const latestNews = [
+const milestones = [
     {
-        title: "SAT Electronics to Lead IoT Device Trends",
-        date: "Jan 11, 2026",
+        title: "SAT Holdings Incorporated",
+        date: "2017",
         image:
-            "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80",
+            "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80",
     },
     {
-        title: "E4 Corridor Construction Milestone Achieved",
-        date: "Dec 19, 2025",
+        title: "SAT Energy Founded And 500kW Plant Connected",
+        date: "2024",
         image:
-            "https://images.unsplash.com/photo-1591799265444-d66432b91588?auto=format&fit=crop&w=900&q=80",
+            "/assets/solar/solar-02.jpg",
     },
     {
-        title: "Green Agro Expands Precision Irrigation",
-        date: "Nov 26, 2025",
+        title: "SAT Electronics Rice Cooker Line Launched",
+        date: "2026",
         image:
-            "https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=900&q=80",
+            "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?auto=format&fit=crop&w=900&q=80",
     },
 ];
+
+const solarGallery = [
+    "/assets/solar/solar-01.jpg",
+    "/assets/solar/solar-02.jpg",
+    "/assets/solar/solar-03.jpg",
+    "/assets/solar/solar-04.jpg",
+    "/assets/solar/solar-05.jpg",
+    "/assets/solar/solar-06.jpg",
+] as const;
 
 function StatIcon({ type }: { type: (typeof keyStats)[number]["icon"] }) {
     const common = "h-5 w-5";
@@ -228,7 +236,7 @@ export default function HomePage() {
                             className="mt-3 text-sm font-semibold tracking-wide text-white sm:text-base lg:text-[34px] lg:leading-none"
                             style={{ textShadow: "0 3px 14px rgba(0,0,0,0.5)" }}
                         >
-                            EMPOWERING PROGRESS. SUSTAINING LIFE. NURTURING GROWTH.
+                            BUILDING DREAMS. EMPOWERING LIFESTYLES.
                         </p>
                         <Link
                             href="#portfolio"
@@ -311,7 +319,7 @@ export default function HomePage() {
                         Why SAT Holdings?
                     </h3>
                     <p className="mt-2 text-center text-[12px] font-extrabold uppercase tracking-[0.16em] text-slate-600">
-                        Integration, Innovation, Reliability, Sustainability
+                        Core Principles We Operate By
                     </p>
 
                     <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
@@ -330,13 +338,57 @@ export default function HomePage() {
                 </div>
             </section>
 
+            <section className="mx-auto mt-8 max-w-[1400px] px-4 sm:px-6 lg:px-8">
+                <div className="border border-black/10 bg-white px-5 py-7 shadow-[0_16px_30px_-20px_rgba(0,0,0,0.5)]">
+                    <h3 className="text-center font-heading text-4xl font-extrabold uppercase text-slate-900">
+                        Message From The Managing Director
+                    </h3>
+                    <p className="mx-auto mt-4 max-w-4xl text-center text-sm leading-relaxed text-slate-700 sm:text-base">
+                        From construction and trading to renewable energy, agriculture,
+                        and now electronics manufacturing, our commitment has remained
+                        the same: build practical solutions that empower the Sri Lankan
+                        people.
+                    </p>
+                    <p className="mt-3 text-center text-xs font-bold uppercase tracking-wide text-slate-500">
+                        - Mr. Anura Lokugamage, Managing Director
+                    </p>
+                </div>
+            </section>
+
+            <section className="mx-auto mt-8 max-w-[1400px] px-4 sm:px-6 lg:px-8">
+                <div className="grid gap-4 md:grid-cols-2">
+                    <article className="border border-black/10 bg-white p-6 shadow-[0_16px_30px_-20px_rgba(0,0,0,0.5)]">
+                        <h3 className="font-heading text-3xl font-extrabold uppercase text-slate-900">
+                            Our Vision
+                        </h3>
+                        <p className="mt-3 text-sm leading-relaxed text-slate-700 sm:text-base">
+                            To be Sri Lanka&apos;s premier multi-disciplinary conglomerate,
+                            recognized for transforming the nation through local
+                            manufacturing, sustainable energy, and resilient
+                            infrastructure.
+                        </p>
+                    </article>
+                    <article className="border border-black/10 bg-white p-6 shadow-[0_16px_30px_-20px_rgba(0,0,0,0.5)]">
+                        <h3 className="font-heading text-3xl font-extrabold uppercase text-slate-900">
+                            Our Mission
+                        </h3>
+                        <p className="mt-3 text-sm leading-relaxed text-slate-700 sm:text-base">
+                            We empower local industry, expand renewable energy,
+                            strengthen construction and trading excellence, and support
+                            food security while creating jobs and reducing import
+                            dependency.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
             <section id="news" className="mx-auto mt-8 max-w-[1400px] px-4 sm:px-6 lg:px-8">
                 <div className="border border-black/10 bg-white px-5 py-7 shadow-[0_16px_30px_-20px_rgba(0,0,0,0.5)]">
                     <h3 className="text-center font-heading text-4xl font-extrabold uppercase text-slate-900">
-                        Latest News &amp; Insights
+                        Group Milestones
                     </h3>
                     <div className="mt-5 grid gap-3 sm:grid-cols-3">
-                        {latestNews.map((item) => (
+                        {milestones.map((item) => (
                             <article key={item.title} className="rounded-lg border border-black/10 p-2">
                                 <Image
                                     src={item.image}
@@ -352,6 +404,31 @@ export default function HomePage() {
                                     {item.date}
                                 </p>
                             </article>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section className="mx-auto mt-8 max-w-[1400px] px-4 sm:px-6 lg:px-8">
+                <div className="border border-black/10 bg-white px-5 py-7 shadow-[0_16px_30px_-20px_rgba(0,0,0,0.5)]">
+                    <h3 className="text-center font-heading text-4xl font-extrabold uppercase text-slate-900">
+                        Tangalle Solar Project
+                    </h3>
+                    <p className="mx-auto mt-2 max-w-3xl text-center text-sm text-slate-600">
+                        SAT Energy Solutions commissioned a 500kW rooftop system in
+                        Vitharandeniya, Tangalle with 775 high-efficiency 620W panels, 4
+                        inverters, and an estimated 800MWh annual yield.
+                    </p>
+                    <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-3">
+                        {solarGallery.map((image, index) => (
+                            <Image
+                                key={image}
+                                src={image}
+                                alt={`Tangalle solar installation photo ${index + 1}`}
+                                width={900}
+                                height={600}
+                                className="h-40 w-full rounded-lg border border-black/10 object-cover"
+                            />
                         ))}
                     </div>
                 </div>

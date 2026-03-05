@@ -110,8 +110,8 @@ export default function Footer() {
                             {COMPANY.name}
                         </h3>
                         <p className="mt-3 max-w-sm text-sm leading-relaxed text-slate-300">
-                            Integration, innovation, reliability, and sustainability across
-                            electronics, infrastructure, renewable energy, and agro.
+                            Building Sri Lanka through engineering, manufacturing,
+                            renewable energy, trading, and modern agriculture initiatives.
                         </p>
                     </div>
 

@@ -7,7 +7,7 @@ import { createBreadcrumbSchema } from "@/lib/structuredData";
 export const metadata: Metadata = {
     title: "Projects & Case Studies",
     description:
-        "SAT Holdings project portfolio - Southern Highway works, RDA projects, and government infrastructure. Detailed case studies showcasing engineering excellence.",
+        "SAT Holdings project portfolio - Southern Highway works, RDA projects, and flagship case studies including the 500kW Tangalle solar plant.",
 };
 
 const breadcrumbSchema = createBreadcrumbSchema([
@@ -24,7 +24,7 @@ export default function ProjectsPage() {
             />
             <PageHero
                 title="Projects & Case Studies"
-                subtitle="A proven track record of delivering government and private infrastructure projects across Sri Lanka."
+                subtitle="A proven track record across highway infrastructure, renewable energy, and local manufacturing milestones."
             />
 
             <SectionWrapper>
@@ -174,10 +174,10 @@ export default function ProjectsPage() {
                         Government-Grade Credibility
                     </h2>
                     <p className="text-neutral-600 leading-relaxed">
-                        Our portfolio includes projects commissioned by the Road Development
-                        Authority, Southern Highway project, and other government entities.
-                        Each contract reflects our ability to meet strict government
-                        standards for quality, safety, and timely delivery.
+                        Our portfolio includes projects commissioned by the Road
+                        Development Authority, Southern Highway programs, and renewable
+                        energy initiatives. Each contract reflects our ability to meet
+                        strict standards for quality, safety, and timely delivery.
                     </p>
                 </div>
             </SectionWrapper>

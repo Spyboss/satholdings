@@ -83,15 +83,30 @@ export default function EngineeringPage() {
                         Machinery Fleet
                     </h2>
                     <p className="text-neutral-600 leading-relaxed">
-                        Our fleet of 43+ heavy machinery units -                         including excavators,
-                        loaders, rollers, and transport vehicles, is available for hire
-                        across Sri Lanka. All equipment is maintained to international
-                        safety standards.
+                        Our fleet of 43+ heavy machinery units, including excavators,
+                        dump trucks, graders, rollers, wheel loaders, dual AC vans, and
+                        4WD double cabs, is available for hire across Sri Lanka. All
+                        equipment is maintained to international safety standards.
                     </p>
-                    {/* Machinery gallery placeholder - add real images when available */}
-                    <p className="mt-8 text-sm text-neutral-400 italic">
-                        Machinery gallery images coming soon.
-                    </p>
+                    <div className="mt-8 grid grid-cols-2 gap-3 text-sm sm:grid-cols-4">
+                        {[
+                            "Excavators",
+                            "Dump Trucks",
+                            "Graders",
+                            "Rollers",
+                            "Wheel Loaders",
+                            "Water Browsers",
+                            "Dual AC Vans",
+                            "4WD Double Cabs",
+                        ].map((item) => (
+                            <span
+                                key={item}
+                                className="rounded-full border border-neutral-200 bg-neutral-50 px-3 py-2 font-medium text-neutral-700"
+                            >
+                                {item}
+                            </span>
+                        ))}
+                    </div>
                 </div>
             </SectionWrapper>
         </>

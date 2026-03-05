@@ -24,7 +24,7 @@ export default function ManufacturingPage() {
             />
             <PageHero
                 title="Manufacturing"
-                subtitle="Operating Sri Lanka's first rice cooker manufacturing facility, proudly Made in Sri Lanka."
+                subtitle="Sri Lanka's first rice cooker manufacturing line - proudly Made in Sri Lanka and engineered for local homes."
             />
 
             {/* The Story */}
@@ -36,8 +36,9 @@ export default function ManufacturingPage() {
                     <p className="text-neutral-600 leading-relaxed mb-4">
                         SAT Holdings established Sri Lanka&apos;s first rice cooker
                         manufacturing facility, marking a milestone in local consumer
-                        electronics production. Our commitment to quality and innovation
-                        drives every product that leaves our factory floor.
+                        electronics production under SAT Electronics Pvt Ltd. Our
+                        commitment to quality and reliability drives every product that
+                        leaves our factory floor.
                     </p>
                     <p className="text-neutral-600 leading-relaxed">
                         By manufacturing locally, we reduce import dependency, create
@@ -61,8 +62,9 @@ export default function ManufacturingPage() {
                     </h2>
                     <p className="text-neutral-600 leading-relaxed">
                         Every unit is designed, assembled, and quality-tested at our local
-                        facility. We&apos;re building a brand that represents Sri Lankan
-                        manufacturing capability on the global stage.
+                        facility for Sri Lankan voltage, climate, and daily usage patterns.
+                        We&apos;re building a brand that represents Sri Lankan manufacturing
+                        capability on a global standard.
                     </p>
                 </div>
             </SectionWrapper>
@@ -96,6 +98,34 @@ export default function ManufacturingPage() {
                                     {item.title}
                                 </h3>
                                 <p className="text-sm text-neutral-600">{item.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </SectionWrapper>
+
+            <SectionWrapper>
+                <div className="max-w-4xl mx-auto text-center">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-6 font-heading">
+                        SAT Premium Deluxe Rice Cooker Specs
+                    </h2>
+                    <div className="grid grid-cols-1 gap-4 text-left sm:grid-cols-2">
+                        {[
+                            ["Capacity Options", "1.8L / 2.2L / 2.8L"],
+                            ["Power", "230V / 50Hz (SL grid optimized)"],
+                            ["Inner Pot", "High-grade non-stick coated aluminum"],
+                            ["Heating", "Rapid-heat with keep-warm function"],
+                            ["Safety", "Dual thermal fuse protection"],
+                            ["Warranty", "12-month SAT manufacturer warranty"],
+                        ].map(([label, value]) => (
+                            <div
+                                key={label}
+                                className="rounded-xl border border-neutral-200 bg-neutral-50 p-4"
+                            >
+                                <p className="text-xs font-bold uppercase tracking-wide text-neutral-500">
+                                    {label}
+                                </p>
+                                <p className="mt-1 font-semibold text-primary">{value}</p>
                             </div>
                         ))}
                     </div>
@@ -136,10 +166,9 @@ export default function ManufacturingPage() {
                         Future Expansion Vision
                     </h2>
                     <p className="text-neutral-600 leading-relaxed">
-                        Our roadmap includes expanding into additional consumer electronics
-                        categories, increasing production capacity, and exploring export
-                        markets, all while maintaining the quality standards that define
-                        SAT Holdings manufacturing.
+                        Our roadmap includes expanding into additional household appliance
+                        categories, scaling production capacity, and strengthening local
+                        after-sales support while preserving SAT&apos;s quality-first standard.
                     </p>
                 </div>
             </SectionWrapper>

@@ -9,7 +9,7 @@ export const COMPANY = {
     phone: ["+94 77 234 6283", "+94 77 741 0011", "+94 11 216 0620"],
     address: {
         street: "1028/B7 Midway Park, Liyanagoda, Pannipitiya",
-        city: "Colombo",
+        city: "Pannipitiya",
         province: "Western Province",
         country: "Sri Lanka",
         countryCode: "LK",
@@ -60,22 +60,27 @@ export const ENGINEERING_SERVICES = [
     {
         title: "Building Construction",
         description:
-            "Commercial, residential, and industrial construction projects delivered with precision engineering.",
+            "Commercial and civil construction packages delivered with disciplined planning, quality control, and safe site practices.",
     },
     {
         title: "Road Construction",
         description:
-            "Highway and road infrastructure projects for national development.",
+            "Highway and access-road development works including turfing, labor supply, and machinery support for large national programs.",
     },
     {
         title: "Soil Protection & Turfing",
         description:
-            "Environmental protection through professional soil stabilization and turfing services.",
+            "Slope stabilization and turfing solutions that protect embankments and improve long-term environmental resilience.",
     },
     {
         title: "Machinery & Vehicle Hiring",
         description:
-            "A fleet of 43+ heavy machinery units available for hire across Sri Lanka.",
+            "A 43+ unit fleet including excavators, rollers, graders, dump trucks, loaders, dual AC vans, and 4WD double cabs.",
+    },
+    {
+        title: "Manpower Recruitment",
+        description:
+            "Skilled and semi-skilled workforce support for construction and infrastructure projects across Sri Lanka.",
     },
 ] as const;
 
@@ -86,12 +91,12 @@ export const PRODUCT_CATEGORIES = [
             {
                 title: "Rice Cookers",
                 description:
-                    "Locally manufactured rice cookers with safety certification and energy efficiency. Multiple capacities available.",
+                    "Locally manufactured SAT Premium Deluxe rice cookers with 1.8L, 2.2L, and 2.8L options, rapid-heat technology, and dual thermal fuse protection.",
             },
             {
                 title: "Electric Kettles",
                 description:
-                    "Stainless steel and BPA-free electric kettles for home and commercial use.",
+                    "Premium kitchen kettles imported for Sri Lankan households with dependable heating performance and durable construction.",
             },
         ],
     },
@@ -116,12 +121,12 @@ export const PRODUCT_CATEGORIES = [
             {
                 title: "Bathroom Fittings",
                 description:
-                    "Premium taps, showers, and accessories for residential and commercial bathrooms.",
+                    "Modern taps, showers, and accessories selected for residential and commercial durability.",
             },
             {
                 title: "Sanitary Ware",
                 description:
-                    "Quality ceramic sanitary ware designed for durability and modern aesthetics.",
+                    "Elegant and practical sanitary ware solutions curated for contemporary projects.",
             },
         ],
     },
@@ -130,43 +135,73 @@ export const PRODUCT_CATEGORIES = [
 export const PROJECTS: Project[] = [
     {
         id: "1",
-        year: 2023,
-        title: "Southern Highway Extension Works",
+        year: 2017,
+        title: "Southern Highway - Beliatta to Apelassa (13km)",
         client: "Road Development Authority (RDA)",
         location: "Southern Province, Sri Lanka",
         description:
-            "Major highway construction and earthwork operations as part of the Southern Expressway extension project.",
+            "Turfing and labor supply package delivered with China Railway First Survey & Design Institute Group for expressway works.",
         category: "Highway",
     },
     {
         id: "2",
-        year: 2022,
-        title: "RDA Road Rehabilitation Project",
+        year: 2017,
+        title: "Southern Highway - Wetiya to Andaragaswewa (10km)",
         client: "Road Development Authority (RDA)",
-        location: "Western Province, Sri Lanka",
+        location: "Southern Province, Sri Lanka",
         description:
-            "Road rehabilitation and improvement works covering multiple national routes.",
-        category: "RDA",
+            "Road package support with construction labor and turfing services under strict timeline and quality requirements.",
+        category: "Highway",
     },
     {
         id: "3",
-        year: 2021,
-        title: "Commercial Building Construction",
-        client: "Private Sector",
-        location: "Colombo, Sri Lanka",
+        year: 2017,
+        title: "Southern Highway - Matara to Beliatta (5km)",
+        client: "Road Development Authority (RDA)",
+        location: "Southern Province, Sri Lanka",
         description:
-            "Multi-story commercial building construction with full engineering services from foundation to finishing.",
-        category: "Building",
+            "Highway construction support scope focused on quality turfing and workforce deployment for key expressway sections.",
+        category: "Highway",
     },
     {
         id: "4",
-        year: 2020,
-        title: "Soil Protection & Turfing Project",
-        client: "Government of Sri Lanka",
+        year: 2019,
+        title: "Southern Highway Interchange Admin Building (Beliatta-Wetiya)",
+        client: "Road Development Authority (RDA)",
         location: "Southern Province, Sri Lanka",
         description:
-            "Large-scale soil stabilization and turfing project for highway embankment protection.",
-        category: "Infrastructure",
+            "Subcontracted building construction works for the interchange administration facility with compliant project delivery.",
+        category: "Building",
+    },
+    {
+        id: "5",
+        year: 2020,
+        title: "RDA Kataragama Detagama Wewa Project",
+        client: "Road Development Authority (RDA)",
+        location: "Kataragama, Sri Lanka",
+        description:
+            "Material, machinery, and labor supply support for an ongoing RDA infrastructure program.",
+        category: "RDA",
+    },
+    {
+        id: "6",
+        year: 2021,
+        title: "RDA Hambanthota 100KM Project",
+        client: "Road Development Authority (RDA)",
+        location: "Hambanthota, Sri Lanka",
+        description:
+            "Multi-package support including material mobilization, machinery deployment, and labor supply.",
+        category: "RDA",
+    },
+    {
+        id: "7",
+        year: 2021,
+        title: "Polpithigama Wayaba Ela Project",
+        client: "Irrigation Sector",
+        location: "Polpithigama, Sri Lanka",
+        description:
+            "Machinery and vehicle supply for irrigation development under program management and design supervision.",
+        category: "Irrigation",
     },
 ];
 
@@ -177,7 +212,7 @@ export const FAQS = [
     },
     {
         question: "Where is SAT Holdings located?",
-        answer: "SAT Holdings is headquartered in Colombo, Sri Lanka, and operates across all provinces serving both government and private sector clients throughout the island.",
+        answer: "SAT Holdings is headquartered at 1028/B7 Midway Park, Liyanagoda, Pannipitiya, Sri Lanka, and serves clients island-wide.",
     },
     {
         question: "Does SAT Holdings undertake government projects?",
@@ -189,7 +224,11 @@ export const FAQS = [
     },
     {
         question: "Are SAT rice cookers locally manufactured?",
-        answer: "Yes, SAT Holdings operates Sri Lanka's first rice cooker manufacturing facility. All rice cookers are designed, assembled, and quality-tested locally, supporting local employment and reducing import dependency.",
+        answer: "Yes. SAT Electronics, part of the SAT Holdings Group, operates Sri Lanka's first rice cooker manufacturing line with local testing, local service support, and a 12-month manufacturer warranty.",
+    },
+    {
+        question: "What is SAT Energy Solutions' flagship renewable project?",
+        answer: "SAT Energy Solutions commissioned a 500kW rooftop solar project in Vitharandeniya, Tangalle with 775 high-efficiency 620W panels, 4 inverters, and an estimated 800MWh annual yield connected to the national grid.",
     },
     {
         question: "How can I request a quote for services?",
@@ -207,53 +246,53 @@ export const FAQS = [
 
 export const CASE_STUDIES = [
     {
-        slug: "southern-highway",
-        title: "Southern Highway Extension Works",
-        client: "Road Development Authority (RDA)",
-        location: "Southern Province, Sri Lanka",
-        year: 2023,
-        category: "Highway Construction",
-        challenge: "The Road Development Authority required a reliable contractor for earthwork operations and pavement construction as part of the Southern Expressway extension. The project demanded adherence to strict timelines and quality standards.",
-        solution: "SAT Holdings deployed a team of 50+ skilled workers and 15+ heavy machinery units including excavators, bulldozers, and compactors. Our triple quality check system ensured all work met RDA specifications.",
+        slug: "tangalle-solar-plant",
+        title: "500kW Tangalle Rooftop Solar Commissioning",
+        client: "SAT Energy Solutions (Pvt) Ltd",
+        location: "Vitharandeniya, Tangalle, Sri Lanka",
+        year: 2024,
+        category: "Renewable Energy",
+        challenge: "Sri Lanka's grid transition needs dependable private-sector renewable projects with measurable output and compliant grid integration.",
+        solution: "SAT Energy Solutions delivered a full rooftop solar installation with 775 high-efficiency 620W panels, 4 inverters, and a dedicated transformer station connected to the national grid.",
         results: [
-            "Completed 12km of earthwork ahead of schedule",
-            "Zero safety incidents throughout project duration",
-            "RDA quality certification achieved",
-            "Follow-up contracts secured for additional phases",
+            "500kW installed generation capacity",
+            "775 solar panels and 4 inverters commissioned",
+            "Estimated annual energy yield of 800MWh",
+            "Grid-connected clean energy contribution",
         ],
         image: null,
     },
     {
-        slug: "colombo-commercial-complex",
-        title: "Colombo Commercial Complex",
-        client: "Private Developer",
-        location: "Colombo 07, Sri Lanka",
-        year: 2021,
-        category: "Building Construction",
-        challenge: "A private developer needed a turnkey solution for a 5-story commercial building in the heart of Colombo, requiring coordination with multiple stakeholders and adherence to municipal regulations.",
-        solution: "SAT Holdings provided end-to-end construction services from foundation work to final finishing. Our in-house engineering team handled structural design while coordinating with utility providers and regulatory bodies.",
+        slug: "southern-highway-program",
+        title: "Southern Highway Multi-Package Delivery",
+        client: "Road Development Authority (RDA)",
+        location: "Southern Province, Sri Lanka",
+        year: 2019,
+        category: "Infrastructure",
+        challenge: "Large highway packages required coordinated labor, machinery, and quality turfing support across multiple expressway sections and timelines.",
+        solution: "SAT Holdings executed several Southern Highway scopes including Beliatta, Wetiya, Andaragaswewa, and an interchange admin building package under a triple quality check approach.",
         results: [
-            "Project completed 2 months ahead of schedule",
-            "LEED-equivalent sustainability standards met",
-            "100% occupancy achieved within 6 months of completion",
-            "Awarded 'Best Commercial Project' by construction association",
+            "13km, 10km, and 5km project stretches supported",
+            "Interchange admin building package completed",
+            "Continuous support for RDA-led infrastructure programs",
+            "Proven repeat delivery capability for government clients",
         ],
         image: null,
     },
     {
         slug: "local-rice-cooker-manufacturing",
-        title: "Establishing Sri Lanka's First Rice Cooker Plant",
+        title: "Launching Sri Lanka's First Rice Cooker Manufacturing Line",
         client: "Internal Development",
-        location: "Colombo, Sri Lanka",
-        year: 2020,
+        location: "Sri Lanka",
+        year: 2026,
         category: "Manufacturing",
-        challenge: "Sri Lanka relied entirely on imported rice cookers. SAT Holdings aimed to establish domestic manufacturing capability to reduce import dependency and create local employment.",
-        solution: "We invested in state-of-the-art assembly lines, imported quality components, and established rigorous quality control processes. Our team underwent extensive training to ensure production quality meets international standards.",
+        challenge: "Sri Lanka needed reliable, locally engineered household appliances that reduce import dependency while meeting local usage conditions.",
+        solution: "SAT Electronics established a local manufacturing line focused on durability, energy efficiency, and safety with units optimized for Sri Lankan power standards.",
         results: [
-            "First locally manufactured rice cooker launched in 2021",
-            "Over 10,000 units produced in first year",
-            "30+ direct jobs created in manufacturing facility",
-            "30% price reduction compared to imported alternatives",
+            "Made in Sri Lanka rice cooker line launched",
+            "1.8L, 2.2L, and 2.8L product variants available",
+            "Dual thermal fuse safety with rapid-heat technology",
+            "12-month manufacturer warranty and local service support",
         ],
         image: null,
     },
