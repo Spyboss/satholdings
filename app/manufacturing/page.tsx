@@ -92,12 +92,12 @@ export default function ManufacturingPage() {
                         ].map((item) => (
                             <div
                                 key={item.title}
-                                className="p-6 bg-neutral-50 rounded-xl border border-neutral-200"
+                                className="card-hover p-6 bg-white rounded-2xl border border-neutral-100"
                             >
-                                <h3 className="font-bold text-primary mb-2 font-heading">
+                                <h3 className="text-sm font-extrabold text-primary mb-3 uppercase tracking-widest">
                                     {item.title}
                                 </h3>
-                                <p className="text-sm text-neutral-600">{item.desc}</p>
+                                <p className="text-[13px] text-neutral-500 leading-relaxed">{item.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -120,12 +120,12 @@ export default function ManufacturingPage() {
                         ].map(([label, value]) => (
                             <div
                                 key={label}
-                                className="rounded-xl border border-neutral-200 bg-neutral-50 p-4"
+                                className="rounded-2xl border border-neutral-100 bg-white p-5 shadow-[0_4px_20px_rgb(0,0,0,0.02)] transition-all hover:-translate-y-0.5"
                             >
-                                <p className="text-xs font-bold uppercase tracking-wide text-neutral-500">
+                                <p className="text-[11px] font-extrabold uppercase tracking-widest text-neutral-400">
                                     {label}
                                 </p>
-                                <p className="mt-1 font-semibold text-primary">{value}</p>
+                                <p className="mt-2 text-[14px] font-semibold text-primary">{value}</p>
                             </div>
                         ))}
                     </div>
@@ -147,12 +147,12 @@ export default function ManufacturingPage() {
                         ].map((step, index) => (
                             <div
                                 key={step}
-                                className="flex items-center gap-4 p-4 bg-white rounded-lg border border-neutral-200 text-left"
+                                className="group flex items-center gap-5 p-5 bg-white rounded-2xl border border-neutral-100 text-left transition-all hover:shadow-md hover:border-secondary/30"
                             >
-                                <span className="flex-shrink-0 inline-flex items-center justify-center w-8 h-8 bg-secondary/10 text-secondary font-bold rounded-full text-sm">
+                                <span className="flex-shrink-0 inline-flex items-center justify-center w-10 h-10 bg-secondary/10 text-secondary font-bold rounded-full text-sm group-hover:scale-110 transition-transform">
                                     {index + 1}
                                 </span>
-                                <p className="font-medium text-neutral-700">{step}</p>
+                                <p className="font-bold text-[13px] uppercase tracking-wide text-primary">{step}</p>
                             </div>
                         ))}
                     </div>

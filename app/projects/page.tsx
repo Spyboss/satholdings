@@ -52,17 +52,17 @@ export default function ProjectsPage() {
                                         {project.title}
                                     </h3>
 
-                                    <div className="flex flex-wrap gap-3 text-xs text-neutral-500 mb-2">
+                                    <div className="flex flex-wrap gap-3 text-[11px] font-semibold text-neutral-500 mb-3 uppercase tracking-wider">
                                         <span>{project.client}</span>
-                                        <span>·</span>
+                                        <span>&bull;</span>
                                         <span>{project.location}</span>
-                                        <span>·</span>
-                                        <span className="px-1.5 py-0.5 bg-neutral-100 rounded text-neutral-600">
+                                        <span>&bull;</span>
+                                        <span className="px-2 py-0.5 bg-neutral-100/50 rounded text-neutral-600 border border-neutral-200/50">
                                             {project.category}
                                         </span>
                                     </div>
 
-                                    <p className="text-sm text-neutral-600 leading-relaxed">
+                                    <p className="text-[13px] text-neutral-500 leading-relaxed">
                                         {project.description}
                                     </p>
                                 </div>
@@ -86,64 +86,65 @@ export default function ProjectsPage() {
                         {CASE_STUDIES.map((study) => (
                             <article
                                 key={study.slug}
-                                className="bg-white rounded-2xl overflow-hidden border border-neutral-200"
+                                className="group bg-white rounded-3xl overflow-hidden border border-neutral-100 shadow-[0_4px_20px_rgb(0,0,0,0.02)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
                             >
-                                <div className="p-6 sm:p-8">
-                                    <div className="flex flex-wrap items-center gap-3 mb-4">
-                                        <span className="px-3 py-1 text-xs font-medium bg-secondary/10 text-secondary rounded-full">
+                                <div className="p-8 sm:p-12 relative">
+                                    <div className="absolute inset-x-0 top-0 h-1.5 w-full bg-secondary opacity-0 transform origin-left transition-all duration-300 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100"></div>
+                                    <div className="flex flex-wrap items-center gap-3 mb-6">
+                                        <span className="px-3 py-1 text-[10px] font-extrabold tracking-widest uppercase bg-secondary/10 text-secondary rounded-full">
                                             {study.category}
                                         </span>
-                                        <span className="text-sm text-neutral-500">
+                                        <span className="text-[11px] font-bold text-neutral-400 font-mono">
                                             {study.year}
                                         </span>
                                     </div>
 
-                                    <h3 className="text-xl sm:text-2xl font-bold text-primary font-heading mb-2">
+                                    <h3 className="text-2xl sm:text-3xl font-bold text-primary font-heading mb-4 group-hover:text-secondary transition-colors">
                                         {study.title}
                                     </h3>
 
-                                    <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-neutral-500 mb-6">
+                                    <div className="flex flex-wrap gap-x-8 gap-y-3 text-[12px] text-neutral-500 mb-8 border-b border-neutral-100 pb-6 uppercase tracking-wider font-semibold">
                                         <span>
-                                            <span className="font-medium">Client:</span> {study.client}
+                                            <span className="text-neutral-400">Client:</span> {study.client}
                                         </span>
                                         <span>
-                                            <span className="font-medium">Location:</span>{" "}
+                                            <span className="text-neutral-400">Location:</span>{" "}
                                             {study.location}
                                         </span>
                                     </div>
 
-                                    <div className="grid gap-5">
+                                    <div className="grid gap-8 sm:gap-10">
                                         <div>
-                                            <h4 className="font-semibold text-primary mb-2">
+                                            <h4 className="font-extrabold text-[12px] uppercase tracking-widest text-primary mb-3">
                                                 The Challenge
                                             </h4>
-                                            <p className="text-neutral-600 text-sm leading-relaxed">
+                                            <p className="text-neutral-500 text-[13px] leading-relaxed">
                                                 {study.challenge}
                                             </p>
                                         </div>
 
                                         <div>
-                                            <h4 className="font-semibold text-primary mb-2">
+                                            <h4 className="font-extrabold text-[12px] uppercase tracking-widest text-primary mb-3">
                                                 Our Solution
                                             </h4>
-                                            <p className="text-neutral-600 text-sm leading-relaxed">
+                                            <p className="text-neutral-500 text-[13px] leading-relaxed">
                                                 {study.solution}
                                             </p>
                                         </div>
 
-                                        <div>
-                                            <h4 className="font-semibold text-primary mb-3">
+                                        <div className="bg-neutral-50 p-6 rounded-2xl border border-neutral-100">
+                                            <h4 className="font-extrabold text-[12px] uppercase tracking-widest text-primary mb-4">
                                                 Results
                                             </h4>
-                                            <ul className="grid sm:grid-cols-2 gap-2">
+                                            <ul className="grid sm:grid-cols-2 gap-4">
                                                 {study.results.map((result, i) => (
                                                     <li
                                                         key={i}
-                                                        className="flex items-start gap-2 text-sm text-neutral-600"
+                                                        className="flex items-start gap-3 text-[13px] text-neutral-600 font-medium"
                                                     >
-                                                        <span className="flex-shrink-0 mt-0.5 w-4 h-4 flex items-center justify-center bg-green-100 text-green-600 rounded-full">
+                                                        <span className="flex-shrink-0 mt-0.5 w-5 h-5 flex items-center justify-center bg-secondary/10 text-secondary rounded-full">
                                                             <svg
-                                                                className="w-2.5 h-2.5"
+                                                                className="w-3 h-3"
                                                                 fill="currentColor"
                                                                 viewBox="0 0 20 20"
                                                             >
@@ -154,7 +155,7 @@ export default function ProjectsPage() {
                                                                 />
                                                             </svg>
                                                         </span>
-                                                        <span>{result}</span>
+                                                        <span className="leading-snug">{result}</span>
                                                     </li>
                                                 ))}
                                             </ul>

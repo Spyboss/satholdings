@@ -99,8 +99,10 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="mt-16 bg-gradient-to-r from-[#0e1117] via-[#101726] to-[#152239] text-white">
-            <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <footer className="mt-16 bg-primary-dark text-white relative overflow-hidden">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(42,123,136,0.1)_0%,transparent_50%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(212,168,67,0.05)_0%,transparent_50%)]" />
+            <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
                 <div className="grid gap-8 md:grid-cols-[1.1fr,1fr,1fr,1fr]">
                     <div>
                         <h3 className="flex items-center gap-2 font-heading text-xl font-bold uppercase tracking-wide">
@@ -137,8 +139,8 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-[0.12em] text-slate-200">
-                            <span className="text-[#88c5ff]">
+                        <h4 className="flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-widest text-neutral-300">
+                            <span className="text-secondary">
                                 <FooterIcon type="newsletter" />
                             </span>
                             Newsletter
@@ -152,7 +154,7 @@ export default function Footer() {
                             />
                             <button
                                 type="submit"
-                                className="rounded-md bg-[#2a84d8] px-4 py-2 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-[#4a9ae2]"
+                                className="rounded-lg bg-secondary px-5 py-2 text-[11px] font-extrabold uppercase tracking-widest text-white transition-colors hover:bg-secondary-light"
                             >
                                 Subscribe
                             </button>
@@ -160,8 +162,8 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-[0.12em] text-slate-200">
-                            <span className="text-[#88c5ff]">
+                        <h4 className="flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-widest text-neutral-300">
+                            <span className="text-secondary">
                                 <FooterIcon type="social" />
                             </span>
                             Social Media
@@ -176,7 +178,7 @@ export default function Footer() {
                                     href={social.href}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className={`group relative flex h-11 w-11 items-center justify-center rounded-full border border-white/25 bg-white/10 text-slate-100 shadow-[inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:text-white hover:shadow-[0_10px_24px_rgba(0,0,0,0.25)] ${social.hoverClass}`}
+                                    className={`group relative flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-300 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:text-white hover:shadow-lg ${social.hoverClass}`}
                                     aria-label={social.label}
                                     title={social.label}
                                 >

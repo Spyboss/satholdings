@@ -17,13 +17,14 @@ export default function Card({
 }: CardProps) {
     const content = (
         <div
-            className={`p-6 rounded-xl border border-neutral-200 bg-white hover:border-secondary/30 hover:shadow-md transition-all ${className}`}
+            className={`card-hover p-8 rounded-2xl border border-neutral-100 bg-white relative overflow-hidden group ${className}`}
         >
-            {icon && <span className="text-3xl mb-4 block">{icon}</span>}
-            <h3 className="text-lg font-bold text-primary mb-2 font-heading">
+            <div className="absolute inset-x-0 top-0 h-1.5 w-full bg-secondary opacity-0 transform origin-left transition-all duration-300 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100"></div>
+            {icon && <span className="text-3xl mb-5 block">{icon}</span>}
+            <h3 className="text-lg font-bold text-primary mb-3 font-heading group-hover:text-secondary transition-colors">
                 {title}
             </h3>
-            <p className="text-sm text-neutral-600 leading-relaxed">{description}</p>
+            <p className="text-[13px] text-neutral-500 leading-relaxed">{description}</p>
         </div>
     );
 

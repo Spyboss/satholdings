@@ -63,12 +63,12 @@ export default function EngineeringPage() {
                             (step, index) => (
                                 <div
                                     key={step}
-                                    className="p-5 bg-white rounded-xl border border-neutral-200"
+                                    className="card-hover p-6 bg-white rounded-2xl border border-neutral-100"
                                 >
-                                    <span className="inline-flex items-center justify-center w-10 h-10 bg-secondary/10 text-secondary font-bold rounded-full text-lg mb-3">
+                                    <span className="inline-flex items-center justify-center w-12 h-12 bg-secondary/10 text-secondary font-bold rounded-full text-lg mb-4">
                                         {index + 1}
                                     </span>
-                                    <p className="font-semibold text-primary text-sm">{step}</p>
+                                    <p className="font-extrabold tracking-wide uppercase text-primary text-[11px]">{step}</p>
                                 </div>
                             )
                         )}

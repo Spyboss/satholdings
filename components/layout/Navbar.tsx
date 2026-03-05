@@ -18,7 +18,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="sticky top-0 z-50 border-b border-black/10 bg-white/95 backdrop-blur">
+        <header className="sticky top-0 z-50 border-b border-neutral-100 bg-white/70 backdrop-blur-xl shadow-sm transition-all duration-300">
             <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-[76px] items-center justify-between gap-4">
                     <Link href="/" className="shrink-0">
@@ -36,16 +36,16 @@ export default function Navbar() {
                             <li key={`${link.href}-${link.label}`} className="flex items-center">
                                 <Link
                                     href={link.href}
-                                    className="px-2 py-2 text-xs font-bold uppercase tracking-wide text-slate-800 transition hover:text-[#1666ab] lg:px-3"
+                                    className="px-2 py-2 text-[11px] font-extrabold uppercase tracking-widest text-neutral-600 transition-colors hover:text-primary lg:px-3"
                                 >
                                     {link.label}
                                 </Link>
                                 {index < headerLinks.length - 1 && (
-                                    <span className="text-black/35">|</span>
+                                    <span className="text-neutral-300 text-xs">|</span>
                                 )}
                             </li>
                         ))}
-                        <li className="ml-2 border-l border-black/15 pl-3 text-xs font-extrabold uppercase tracking-wide text-slate-800">
+                        <li className="ml-2 border-l border-neutral-200 pl-4 text-[11px] font-extrabold uppercase tracking-widest text-neutral-500 hover:text-primary cursor-pointer transition-colors">
                             ⌕ Search
                         </li>
                     </ul>
@@ -83,13 +83,13 @@ export default function Navbar() {
                 </div>
 
                 {isOpen && (
-                    <div className="border-t border-black/10 py-3 md:hidden">
+                    <div className="border-t border-neutral-100 py-3 md:hidden">
                         <ul className="flex flex-col gap-1">
                             {headerLinks.map((link) => (
                                 <li key={`${link.href}-${link.label}`}>
                                     <Link
                                         href={link.href}
-                                        className="block rounded-md px-3 py-2 text-sm font-bold uppercase tracking-wide text-slate-700 hover:bg-slate-50 hover:text-[#1666ab]"
+                                        className="block rounded-lg px-3 py-2 text-[12px] font-extrabold uppercase tracking-widest text-neutral-600 hover:bg-neutral-50 hover:text-primary transition-colors"
                                         onClick={() => setIsOpen(false)}
                                     >
                                         {link.label}

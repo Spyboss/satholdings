@@ -117,12 +117,11 @@ export default function ContactPage() {
                             </div>
                         </div>
 
-                        {/* Google Map Embed */}
-                        <div className="mt-8 rounded-xl overflow-hidden border border-neutral-200">
+                        <div className="mt-8 rounded-3xl overflow-hidden border border-neutral-100 shadow-[0_4px_20px_rgb(0,0,0,0.02)]">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.62280805858!2d79.68383204999999!3d6.9218386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1707000000000"
                                 width="100%"
-                                height="250"
+                                height="280"
                                 style={{ border: 0 }}
                                 allowFullScreen
                                 loading="lazy"
@@ -132,8 +131,7 @@ export default function ContactPage() {
                         </div>
                     </div>
 
-                    {/* Contact Form */}
-                    <div>
+                    <div className="bg-white p-8 sm:p-12 rounded-[2rem] border border-neutral-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
                         <h2 className="text-2xl font-bold text-primary mb-6 font-heading">
                             Send a Message
                         </h2>
@@ -173,102 +171,92 @@ export default function ContactPage() {
                                     autoComplete="off"
                                 />
 
-                                <div>
-                                    <label
-                                        htmlFor="name"
-                                        className="block text-sm font-medium text-neutral-700 mb-1"
-                                    >
-                                        Full Name *
-                                    </label>
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        required
-                                        minLength={2}
-                                        maxLength={100}
-                                        className="w-full px-4 py-2.5 border border-neutral-300 rounded-lg text-sm focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-colors"
-                                        placeholder="Your full name"
-                                    />
-                                </div>
+                                <label
+                                    htmlFor="name"
+                                    className="block text-[11px] font-extrabold uppercase tracking-widest text-neutral-500 mb-2"
+                                >
+                                    Full Name *
+                                </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                    minLength={2}
+                                    maxLength={100}
+                                    className="w-full px-4 py-3 bg-neutral-50 border border-neutral-200 rounded-xl text-[13px] text-neutral-700 focus:bg-white focus:ring-4 focus:ring-secondary/10 focus:border-secondary outline-none transition-all placeholder:text-neutral-400"
+                                    placeholder="Your full name"
+                                />
 
-                                <div>
-                                    <label
-                                        htmlFor="email"
-                                        className="block text-sm font-medium text-neutral-700 mb-1"
-                                    >
-                                        Email Address *
-                                    </label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        required
-                                        className="w-full px-4 py-2.5 border border-neutral-300 rounded-lg text-sm focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-colors"
-                                        placeholder="you@example.com"
-                                    />
-                                </div>
+                                <label
+                                    htmlFor="email"
+                                    className="block text-[11px] font-extrabold uppercase tracking-widest text-neutral-500 mb-2"
+                                >
+                                    Email Address *
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                    className="w-full px-4 py-3 bg-neutral-50 border border-neutral-200 rounded-xl text-[13px] text-neutral-700 focus:bg-white focus:ring-4 focus:ring-secondary/10 focus:border-secondary outline-none transition-all placeholder:text-neutral-400"
+                                    placeholder="you@example.com"
+                                />
 
-                                <div>
-                                    <label
-                                        htmlFor="phone"
-                                        className="block text-sm font-medium text-neutral-700 mb-1"
-                                    >
-                                        Phone Number
-                                    </label>
-                                    <input
-                                        type="tel"
-                                        id="phone"
-                                        name="phone"
-                                        className="w-full px-4 py-2.5 border border-neutral-300 rounded-lg text-sm focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-colors"
-                                        placeholder="+94 XX XXX XXXX"
-                                    />
-                                </div>
+                                <label
+                                    htmlFor="phone"
+                                    className="block text-[11px] font-extrabold uppercase tracking-widest text-neutral-500 mb-2"
+                                >
+                                    Phone Number
+                                </label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    className="w-full px-4 py-3 bg-neutral-50 border border-neutral-200 rounded-xl text-[13px] text-neutral-700 focus:bg-white focus:ring-4 focus:ring-secondary/10 focus:border-secondary outline-none transition-all placeholder:text-neutral-400"
+                                    placeholder="+94 XX XXX XXXX"
+                                />
 
-                                <div>
-                                    <label
-                                        htmlFor="subject"
-                                        className="block text-sm font-medium text-neutral-700 mb-1"
-                                    >
-                                        Subject *
-                                    </label>
-                                    <select
-                                        id="subject"
-                                        name="subject"
-                                        required
-                                        className="w-full px-4 py-2.5 border border-neutral-300 rounded-lg text-sm focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-colors bg-white"
-                                    >
-                                        <option value="">Select a topic</option>
-                                        <option value="Engineering Inquiry">
-                                            Engineering &amp; Construction
-                                        </option>
-                                        <option value="Manufacturing Inquiry">Manufacturing</option>
-                                        <option value="Product Inquiry">
-                                            Import &amp; Trading
-                                        </option>
-                                        <option value="Partnership">Partnership</option>
-                                        <option value="General">General Inquiry</option>
-                                    </select>
-                                </div>
+                                <label
+                                    htmlFor="subject"
+                                    className="block text-[11px] font-extrabold uppercase tracking-widest text-neutral-500 mb-2"
+                                >
+                                    Subject *
+                                </label>
+                                <select
+                                    id="subject"
+                                    name="subject"
+                                    required
+                                    className="w-full px-4 py-3 bg-neutral-50 border border-neutral-200 rounded-xl text-[13px] text-neutral-700 focus:bg-white focus:ring-4 focus:ring-secondary/10 focus:border-secondary outline-none transition-all"
+                                >
+                                    <option value="">Select a topic</option>
+                                    <option value="Engineering Inquiry">
+                                        Engineering &amp; Construction
+                                    </option>
+                                    <option value="Manufacturing Inquiry">Manufacturing</option>
+                                    <option value="Product Inquiry">
+                                        Import &amp; Trading
+                                    </option>
+                                    <option value="Partnership">Partnership</option>
+                                    <option value="General">General Inquiry</option>
+                                </select>
 
-                                <div>
-                                    <label
-                                        htmlFor="message"
-                                        className="block text-sm font-medium text-neutral-700 mb-1"
-                                    >
-                                        Message *
-                                    </label>
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        required
-                                        rows={5}
-                                        minLength={10}
-                                        maxLength={2000}
-                                        className="w-full px-4 py-2.5 border border-neutral-300 rounded-lg text-sm focus:ring-2 focus:ring-secondary/20 focus:border-secondary outline-none transition-colors resize-y"
-                                        placeholder="Tell us about your project or inquiry..."
-                                    />
-                                </div>
+                                <label
+                                    htmlFor="message"
+                                    className="block text-[11px] font-extrabold uppercase tracking-widest text-neutral-500 mb-2"
+                                >
+                                    Message *
+                                </label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    required
+                                    rows={5}
+                                    minLength={10}
+                                    maxLength={2000}
+                                    className="w-full px-4 py-3 bg-neutral-50 border border-neutral-200 rounded-xl text-[13px] text-neutral-700 focus:bg-white focus:ring-4 focus:ring-secondary/10 focus:border-secondary outline-none transition-all resize-y placeholder:text-neutral-400"
+                                    placeholder="Tell us about your project or inquiry..."
+                                />
 
                                 {status === "error" && (
                                     <div className="p-3 bg-red-50 border border-red-200 rounded-lg">
@@ -279,7 +267,7 @@ export default function ContactPage() {
                                 <button
                                     type="submit"
                                     disabled={status === "submitting"}
-                                    className="w-full px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary-light transition-colors disabled:opacity-60 disabled:cursor-not-allowed text-sm"
+                                    className="w-full px-6 py-4 bg-primary text-white font-extrabold text-[12px] uppercase tracking-widest rounded-xl hover:bg-primary-light transition-all shadow-[0_4px_14px_rgb(27,54,93,0.3)] hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgb(27,54,93,0.4)] disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none"
                                 >
                                     {status === "submitting" ? "Sending..." : "Send Message"}
                                 </button>

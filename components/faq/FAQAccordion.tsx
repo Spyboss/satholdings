@@ -15,15 +15,15 @@ export default function FAQAccordion({ faqs }: { faqs: readonly FAQ[] }) {
             {faqs.map((faq, index) => (
                 <div
                     key={index}
-                    className="border border-neutral-200 rounded-lg overflow-hidden"
+                    className="border border-neutral-100 rounded-2xl overflow-hidden shadow-[0_4px_20px_rgb(0,0,0,0.02)] transition-all hover:border-secondary/20"
                 >
                     <button
                         onClick={() =>
                             setOpenIndex(openIndex === index ? null : index)
                         }
-                        className="w-full flex items-center justify-between p-5 text-left bg-white hover:bg-neutral-50 transition-colors"
+                        className="w-full flex items-center justify-between p-6 sm:p-8 text-left bg-white hover:bg-neutral-50/50 transition-colors"
                     >
-                        <span className="font-medium text-primary pr-4">
+                        <span className="font-extrabold text-[13px] uppercase tracking-widest text-primary pr-4">
                             {faq.question}
                         </span>
                         <span className="flex-shrink-0 text-secondary">
@@ -59,8 +59,8 @@ export default function FAQAccordion({ faqs }: { faqs: readonly FAQ[] }) {
                         </span>
                     </button>
                     {openIndex === index && (
-                        <div className="p-5 pt-0 bg-white border-t border-neutral-100">
-                            <p className="text-neutral-600 leading-relaxed">
+                        <div className="p-6 sm:p-8 pt-0 bg-white border-t border-neutral-100/50">
+                            <p className="text-[14px] text-neutral-500 leading-relaxed">
                                 {faq.answer}
                             </p>
                         </div>
