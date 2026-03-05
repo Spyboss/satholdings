@@ -95,7 +95,7 @@ export default function EngineeringPage() {
                             "Graders",
                             "Rollers",
                             "Wheel Loaders",
-                            "Water Browsers",
+                            "Water Bowsers",
                             "Dual AC Vans",
                             "4WD Double Cabs",
                         ].map((item) => (

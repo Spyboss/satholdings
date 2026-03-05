@@ -60,12 +60,12 @@ export const ENGINEERING_SERVICES = [
     {
         title: "Building Construction",
         description:
-            "Commercial and civil construction packages delivered with disciplined planning, quality control, and safe site practices.",
+            "Commercial and civil construction packages delivered with disciplined planning, quality control, and safe site management.",
     },
     {
         title: "Road Construction",
         description:
-            "Highway and access-road development works including turfing, labor supply, and machinery support for large national programs.",
+            "Highway and access-road development works including turfing, labor supply, and machinery support for national programs.",
     },
     {
         title: "Soil Protection & Turfing",
@@ -75,7 +75,7 @@ export const ENGINEERING_SERVICES = [
     {
         title: "Machinery & Vehicle Hiring",
         description:
-            "A 43+ unit fleet including excavators, rollers, graders, dump trucks, loaders, dual AC vans, and 4WD double cabs.",
+            "A 43+ unit fleet including excavators, rollers, graders, dump trucks, wheel loaders, dual AC vans, and 4WD double cabs.",
     },
     {
         title: "Manpower Recruitment",
@@ -96,7 +96,7 @@ export const PRODUCT_CATEGORIES = [
             {
                 title: "Electric Kettles",
                 description:
-                    "Premium kitchen kettles imported for Sri Lankan households with dependable heating performance and durable construction.",
+                    "Premium electric kettles imported for Sri Lankan households with dependable heating performance and durable construction.",
             },
         ],
     },
@@ -126,7 +126,7 @@ export const PRODUCT_CATEGORIES = [
             {
                 title: "Sanitary Ware",
                 description:
-                    "Elegant and practical sanitary ware solutions curated for contemporary projects.",
+                    "Elegant and practical sanitaryware solutions curated for contemporary projects.",
             },
         ],
     },
@@ -160,7 +160,7 @@ export const PROJECTS: Project[] = [
         client: "Road Development Authority (RDA)",
         location: "Southern Province, Sri Lanka",
         description:
-            "Highway construction support scope focused on quality turfing and workforce deployment for key expressway sections.",
+            "Highway support scope focused on quality turfing and workforce deployment for key expressway sections.",
         category: "Highway",
     },
     {
@@ -190,7 +190,7 @@ export const PROJECTS: Project[] = [
         client: "Road Development Authority (RDA)",
         location: "Hambanthota, Sri Lanka",
         description:
-            "Multi-package support including material mobilization, machinery deployment, and labor supply.",
+            "Multi-package support including material mobilization, machinery deployment, and labor coordination.",
         category: "RDA",
     },
     {
@@ -228,7 +228,7 @@ export const FAQS = [
     },
     {
         question: "What is SAT Energy Solutions' flagship renewable project?",
-        answer: "SAT Energy Solutions commissioned a 500kW rooftop solar project in Vitharandeniya, Tangalle with 775 high-efficiency 620W panels, 4 inverters, and an estimated 800MWh annual yield connected to the national grid.",
+        answer: "SAT Energy Solutions commissioned a 500 kW rooftop solar project in Vitharandeniya, Tangalle with 775 high-efficiency 620W panels, 4 inverters, and an estimated 800MWh annual yield connected to the national grid.",
     },
     {
         question: "How can I request a quote for services?",
@@ -252,7 +252,7 @@ export const CASE_STUDIES = [
         location: "Vitharandeniya, Tangalle, Sri Lanka",
         year: 2024,
         category: "Renewable Energy",
-        challenge: "Sri Lanka's grid transition needs dependable private-sector renewable projects with measurable output and compliant grid integration.",
+        challenge: "Sri Lanka's grid transition requires dependable private-sector renewable projects with measurable output and compliant grid integration.",
         solution: "SAT Energy Solutions delivered a full rooftop solar installation with 775 high-efficiency 620W panels, 4 inverters, and a dedicated transformer station connected to the national grid.",
         results: [
             "500kW installed generation capacity",

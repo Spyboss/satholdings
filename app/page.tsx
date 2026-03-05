@@ -33,7 +33,7 @@ const heroPanels = [
 const portfolioCards = [
     {
         title: "SAT Electronics (Pvt) Ltd",
-        subtitle: "Made In Sri Lanka Rice Cooker Manufacturing",
+        subtitle: "Local appliance manufacturing for Sri Lankan households",
         cta: "View Electronics",
         logo: "https://res.cloudinary.com/dtnzmhngi/image/upload/v1772171307/WhatsApp_Image_2026-02-27_at_11.08.39_j5iktg.jpg",
         href: "/products",
@@ -41,7 +41,7 @@ const portfolioCards = [
     },
     {
         title: "SAT Holdings (Pvt) Ltd",
-        subtitle: "Engineering, Construction, And Strategic Imports",
+        subtitle: "Engineering, infrastructure delivery, and strategic trading",
         cta: "View Construction",
         logo: "https://res.cloudinary.com/dtnzmhngi/image/upload/v1772171307/WhatsApp_Image_2026-02-27_at_11.08.37_hf8int.jpg",
         href: "/engineering",
@@ -49,7 +49,7 @@ const portfolioCards = [
     },
     {
         title: "SAT Energy Solutions Pvt Ltd",
-        subtitle: "500kW Grid-Connected Solar In Tangalle",
+        subtitle: "Grid-connected solar infrastructure and energy delivery",
         cta: "View Energy",
         logo: "https://res.cloudinary.com/dtnzmhngi/image/upload/v1772171307/WhatsApp_Image_2026-02-27_at_11.08.38_ap0zlp.jpg",
         href: "/projects",
@@ -57,7 +57,7 @@ const portfolioCards = [
     },
     {
         title: "SAT Green Agro (Pvt) Ltd",
-        subtitle: "Technology-Driven Agriculture And Food Security",
+        subtitle: "Technology-led agriculture and food security initiatives",
         cta: "View Agro",
         logo: "https://res.cloudinary.com/dtnzmhngi/image/upload/v1772171307/img11_z2uvkb.jpg",
         href: "/contact",
@@ -67,7 +67,7 @@ const portfolioCards = [
 
 const keyStats = [
     { value: "4", label: "Major Industries", icon: "industries" },
-    { value: "2017", label: "Founded In 2017", icon: "calendar" },
+    { value: "2017", label: "Established 2017", icon: "calendar" },
     { value: "21+", label: "Major Projects", icon: "projects" },
     { value: "24+", label: "Corporate Clients", icon: "team" },
 ] as const;
@@ -89,7 +89,7 @@ const reasons = [
         icon: "reliability",
     },
     {
-        title: "Governance",
+        title: "Corporate Governance",
         text: "Structured oversight to sustain quality and accountability.",
         icon: "sustainability",
     },
@@ -103,13 +103,13 @@ const milestones = [
             "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80",
     },
     {
-        title: "SAT Energy Founded And 500kW Plant Connected",
+        title: "SAT Energy founded and Tangalle solar plant connected",
         date: "2024",
         image:
             "/assets/solar/solar-02.jpg",
     },
     {
-        title: "SAT Electronics Rice Cooker Line Launched",
+        title: "SAT Electronics rice cooker line launched",
         date: "2026",
         image:
             "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?auto=format&fit=crop&w=900&q=80",
@@ -346,8 +346,8 @@ export default function HomePage() {
                     <p className="mx-auto mt-4 max-w-4xl text-center text-sm leading-relaxed text-slate-700 sm:text-base">
                         From construction and trading to renewable energy, agriculture,
                         and now electronics manufacturing, our commitment has remained
-                        the same: build practical solutions that empower the Sri Lankan
-                        people.
+                        the same: building practical solutions that empower the Sri
+                        Lankan people.
                     </p>
                     <p className="mt-3 text-center text-xs font-bold uppercase tracking-wide text-slate-500">
                         - Mr. Anura Lokugamage, Managing Director
@@ -415,7 +415,7 @@ export default function HomePage() {
                         Tangalle Solar Project
                     </h3>
                     <p className="mx-auto mt-2 max-w-3xl text-center text-sm text-slate-600">
-                        SAT Energy Solutions commissioned a 500kW rooftop system in
+                        SAT Energy Solutions commissioned a 500 kW rooftop system in
                         Vitharandeniya, Tangalle with 775 high-efficiency 620W panels, 4
                         inverters, and an estimated 800MWh annual yield.
                     </p>

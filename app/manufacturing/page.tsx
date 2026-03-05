@@ -107,7 +107,7 @@ export default function ManufacturingPage() {
             <SectionWrapper>
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-6 font-heading">
-                        SAT Premium Deluxe Rice Cooker Specs
+                        SAT Premium Deluxe Rice Cooker Specifications
                     </h2>
                     <div className="grid grid-cols-1 gap-4 text-left sm:grid-cols-2">
                         {[
