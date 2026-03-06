@@ -3,9 +3,12 @@ import { COMPANY } from "@/lib/constants";
 
 const siteMap = [
     { label: "Home", href: "/" },
-    { label: "Our Businesses", href: "#portfolio" },
+    { label: "Engineering", href: "/engineering" },
+    { label: "Products", href: "/products" },
     { label: "Projects", href: "/projects" },
+    { label: "Manufacturing", href: "/manufacturing" },
     { label: "Contact", href: "/contact" },
+    { label: "FAQ", href: "/faq" },
 ];
 
 const socialLinks = [
@@ -29,7 +32,7 @@ const socialLinks = [
     },
 ] as const;
 
-function FooterIcon({ type }: { type: "sitemap" | "newsletter" | "social" | "brand" }) {
+function FooterIcon({ type }: { type: "sitemap" | "contact" | "social" | "brand" }) {
     const common = "h-4 w-4";
 
     if (type === "sitemap") {
@@ -44,11 +47,10 @@ function FooterIcon({ type }: { type: "sitemap" | "newsletter" | "social" | "bra
         );
     }
 
-    if (type === "newsletter") {
+    if (type === "contact") {
         return (
             <svg viewBox="0 0 24 24" fill="none" className={common} aria-hidden>
-                <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.8" />
-                <path d="M4 7l8 6 8-6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
         );
     }
@@ -141,24 +143,19 @@ export default function Footer() {
                     <div>
                         <h4 className="flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-widest text-neutral-300">
                             <span className="text-secondary">
-                                <FooterIcon type="newsletter" />
+                                <FooterIcon type="contact" />
                             </span>
-                            Newsletter
+                            Contact Us
                         </h4>
-                        <form className="mt-3 flex gap-2" action="#" method="post">
-                            <input
-                                type="email"
-                                placeholder="Your email address"
-                                className="w-full rounded-md border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder:text-slate-300 focus:outline-none focus:ring-2 focus:ring-[#3aa1ff]"
-                                aria-label="Email address"
-                            />
-                            <button
-                                type="submit"
-                                className="rounded-lg bg-secondary px-5 py-2 text-[11px] font-extrabold uppercase tracking-widest text-white transition-colors hover:bg-secondary-light"
-                            >
-                                Subscribe
-                            </button>
-                        </form>
+                        <ul className="mt-3 space-y-2 text-sm text-slate-300">
+                            <li>1028/B7 Midway Park, Liyanagoda, <br />Pannipitiya, Sri Lanka.</li>
+                            <li>
+                                <a href="tel:+94772346283" className="hover:text-white transition">+94 77 234 6283</a> / <a href="tel:+94112160620" className="hover:text-white transition">+94 11 216 0620</a>
+                            </li>
+                            <li>
+                                <a href="mailto:holdingssat@gmail.com" className="hover:text-white transition">holdingssat@gmail.com</a>
+                            </li>
+                        </ul>
                     </div>
 
                     <div>

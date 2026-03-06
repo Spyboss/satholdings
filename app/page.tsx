@@ -21,7 +21,7 @@ const heroPanels = [
     },
     {
         title: "Energy",
-        image: "/assets/solar/solar-01.jpg",
+        image: "/assets/gallery/1.jpg",
     },
     {
         title: "Agro",
@@ -106,7 +106,7 @@ const milestones = [
         title: "SAT Energy founded and Tangalle solar plant connected",
         date: "2024",
         image:
-            "/assets/solar/solar-02.jpg",
+            "/assets/gallery/2.jpg",
     },
     {
         title: "SAT Electronics rice cooker line launched",
@@ -116,14 +116,6 @@ const milestones = [
     },
 ];
 
-const solarGallery = [
-    "/assets/solar/solar-01.jpg",
-    "/assets/solar/solar-02.jpg",
-    "/assets/solar/solar-03.jpg",
-    "/assets/solar/solar-04.jpg",
-    "/assets/solar/solar-05.jpg",
-    "/assets/solar/solar-06.jpg",
-] as const;
 
 function StatIcon({ type }: { type: (typeof keyStats)[number]["icon"] }) {
     const common = "h-5 w-5";
@@ -231,6 +223,9 @@ export default function HomePage() {
                         </h1>
                         <p className="mt-4 text-[13px] font-semibold tracking-wide text-neutral-200 sm:text-base lg:text-[32px] lg:leading-tight drop-shadow-md">
                             BUILDING DREAMS. EMPOWERING LIFESTYLES.
+                        </p>
+                        <p className="mt-3 text-[12px] font-medium text-neutral-300 sm:text-sm lg:text-lg max-w-xl mx-auto lg:mx-0 drop-shadow">
+                            Pioneering Sri Lanka's First Rice Cooker Manufacturing alongside our established legacy in engineering and infrastructure.
                         </p>
                         <Link
                             href="#portfolio"
@@ -409,32 +404,6 @@ export default function HomePage() {
                                     </h4>
                                 </div>
                             </article>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            <section className="mx-auto my-8 max-w-[1400px] px-4 sm:px-6 lg:px-8">
-                <div className="rounded-3xl border border-neutral-100 bg-white px-6 py-10 shadow-sm sm:p-12">
-                    <h3 className="text-center font-heading text-3xl font-extrabold uppercase text-primary sm:text-4xl">
-                        Tangalle Solar Project
-                    </h3>
-                    <p className="mx-auto mt-4 max-w-3xl text-center text-[13px] leading-relaxed text-neutral-500 sm:text-sm">
-                        SAT Energy Solutions commissioned a 500 kW rooftop system in
-                        Vitharandeniya, Tangalle with 775 high-efficiency 620W panels, 4
-                        inverters, and an estimated 800MWh annual yield.
-                    </p>
-                    <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3">
-                        {solarGallery.map((image, index) => (
-                            <div key={image} className="overflow-hidden rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] group">
-                                <Image
-                                    src={image}
-                                    alt={`Tangalle solar installation photo ${index + 1}`}
-                                    width={900}
-                                    height={600}
-                                    className="h-48 w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                />
-                            </div>
                         ))}
                     </div>
                 </div>

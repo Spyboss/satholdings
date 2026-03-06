@@ -6,11 +6,10 @@ import { useState } from "react";
 
 const headerLinks = [
     { label: "Home", href: "/" },
-    { label: "About Us", href: "#portfolio" },
-    { label: "Our Businesses", href: "#portfolio" },
-    { label: "Sustainability", href: "/projects" },
-    { label: "Careers", href: "/contact" },
-    { label: "News", href: "#news" },
+    { label: "Engineering", href: "/engineering" },
+    { label: "Products", href: "/products" },
+    { label: "Projects", href: "/projects" },
+    { label: "Manufacturing", href: "/manufacturing" },
     { label: "Contact Us", href: "/contact" },
 ];
 
@@ -45,9 +44,6 @@ export default function Navbar() {
                                 )}
                             </li>
                         ))}
-                        <li className="ml-2 border-l border-neutral-200 pl-4 text-[11px] font-extrabold uppercase tracking-widest text-neutral-500 hover:text-primary cursor-pointer transition-colors">
-                            ⌕ Search
-                        </li>
                     </ul>
 
                     <button
@@ -96,9 +92,6 @@ export default function Navbar() {
                                     </Link>
                                 </li>
                             ))}
-                            <li className="px-3 py-2 text-sm font-bold uppercase tracking-wide text-slate-700">
-                                ⌕ Search
-                            </li>
                         </ul>
                     </div>
                 )}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHero from "@/components/ui/PageHero";
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import { PROJECTS, CASE_STUDIES, COMPANY } from "@/lib/constants";
@@ -14,6 +15,15 @@ const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: COMPANY.domain },
     { name: "Projects", url: `${COMPANY.domain}/projects` },
 ]);
+
+const solarGallery = [
+    "/assets/gallery/1.jpg",
+    "/assets/gallery/2.jpg",
+    "/assets/gallery/3.jpg",
+    "/assets/gallery/4.jpg",
+    "/assets/gallery/5.jpg",
+    "/assets/gallery/6.jpg",
+] as const;
 
 export default function ProjectsPage() {
     return (
@@ -67,6 +77,57 @@ export default function ProjectsPage() {
                                     </p>
                                 </div>
                             ))}
+                        </div>
+                    </div>
+                </div>
+            </SectionWrapper>
+
+            {/* Tangalle Solar Showcase */}
+            <SectionWrapper bg="white">
+                <div className="max-w-6xl mx-auto">
+                    <div className="rounded-[2.5rem] bg-neutral-900 px-6 py-12 sm:px-12 sm:py-16 relative overflow-hidden text-center text-white shadow-2xl">
+                        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center opacity-20" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 to-transparent" />
+
+                        <div className="relative z-10 max-w-3xl mx-auto">
+                            <span className="inline-block px-3 py-1 text-[11px] font-extrabold tracking-widest uppercase bg-secondary/20 text-secondary-light rounded-full border border-secondary/30 mb-6 backdrop-blur">
+                                Recently Commissioned
+                            </span>
+                            <h2 className="text-3xl sm:text-5xl font-extrabold font-heading mb-6 tracking-tight drop-shadow-md">
+                                500kW Tangalle Rooftop Solar Project
+                            </h2>
+                            <p className="text-lg text-neutral-300 font-medium leading-relaxed mb-10">
+                                775 high-efficiency 620W solar panels seamlessly connected to the National Grid, generating an estimated 800MWh annual yield. Powering the nation, one ray at a time.
+                            </p>
+
+                            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16">
+                                {[
+                                    { value: "500kW", label: "Capacity" },
+                                    { value: "775", label: "Panels" },
+                                    { value: "4", label: "Inverters" },
+                                    { value: "800MWh", label: "Annual Yield" },
+                                ].map((stat) => (
+                                    <div key={stat.label} className="bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+                                        <div className="text-2xl sm:text-3xl font-bold text-white font-heading mb-1">{stat.value}</div>
+                                        <div className="text-[10px] font-extrabold uppercase tracking-widest text-neutral-400">{stat.label}</div>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                {solarGallery.map((image, index) => (
+                                    <div key={image} className="overflow-hidden rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.3)] group relative border border-white/10">
+                                        <Image
+                                            src={image}
+                                            alt={`Tangalle solar installation photo ${index + 1}`}
+                                            width={500}
+                                            height={350}
+                                            className="h-40 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
