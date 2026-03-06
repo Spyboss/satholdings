@@ -343,10 +343,10 @@ export default function HomePage() {
                         Message From The Managing Director
                     </h3>
                     <p className="relative mx-auto mt-6 max-w-4xl text-center text-sm leading-relaxed text-slate-700 sm:text-base md:text-lg">
-                        "From construction and trading to renewable energy, agriculture,
-                        and now electronics manufacturing, our commitment has remained
-                        the same: building practical solutions that empower the Sri
-                        Lankan people."
+                        &ldquo;From construction and trading to renewable energy,
+                        agriculture, and now electronics manufacturing, our commitment
+                        has remained the same: building practical solutions that
+                        empower the Sri Lankan people.&rdquo;
                     </p>
                     <p className="relative mt-8 text-center text-[11px] font-extrabold uppercase tracking-widest text-secondary">
                         &mdash; Mr. Anura Lokugamage, Managing Director
