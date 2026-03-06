@@ -91,27 +91,56 @@ export default function ProductsPage() {
                 </div>
             </SectionWrapper>
 
-            {PRODUCT_CATEGORIES.map((category, index) => (
-                <SectionWrapper
-                    key={category.name}
-                    bg={index % 2 === 0 ? "white" : "neutral"}
-                >
-                    <div className="mb-8">
-                        <h2 className="text-2xl sm:text-3xl font-bold text-primary font-heading">
-                            {category.name}
-                        </h2>
-                    </div>
-                    <GridLayout columns={2}>
-                        {category.products.map((product) => (
-                            <Card
-                                key={product.title}
-                                title={product.title}
-                                description={product.description}
-                            />
-                        ))}
-                    </GridLayout>
-                </SectionWrapper>
-            ))}
+            {PRODUCT_CATEGORIES.map((category, index) => {
+                const getIcon = (catName: string, prodTitle: string) => {
+                    if (catName.includes("Electronics")) {
+                        return prodTitle.includes("Rice") ? "🍚" : "🫖";
+                    }
+                    if (catName.includes("Aluminum")) {
+                        return prodTitle.includes("Architectural") ? "🪟" : "🏭";
+                    }
+                    if (catName.includes("Bathware")) {
+                        return prodTitle.includes("Fittings") ? "🚿" : "🛁";
+                    }
+                    return "📦";
+                };
+
+                return (
+                    <SectionWrapper
+                        key={category.name}
+                        bg={index % 2 === 0 ? "white" : "neutral"}
+                    >
+                        <div className="mb-10 text-center sm:text-left">
+                            <span className="inline-block px-3 py-1 text-[10px] font-extrabold tracking-widest uppercase bg-primary/5 text-primary rounded-full mb-3">
+                                Category
+                            </span>
+                            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary font-heading tracking-tight">
+                                {category.name}
+                            </h2>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            {category.products.map((product) => (
+                                <div key={product.title} className="group relative bg-white p-8 sm:p-10 rounded-3xl border border-neutral-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] file:first-line:">
+                                    <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-bl-full -mr-8 -mt-8 transition-transform duration-500 group-hover:scale-150 ease-out" />
+                                    <div className="flex items-start gap-6 relative z-10">
+                                        <div className="w-16 h-16 rounded-2xl bg-neutral-50 flex items-center justify-center text-3xl shadow-sm flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                                            {getIcon(category.name, product.title)}
+                                        </div>
+                                        <div>
+                                            <h3 className="text-xl font-bold text-primary mb-3 font-heading group-hover:text-secondary transition-colors">
+                                                {product.title}
+                                            </h3>
+                                            <p className="text-[13px] text-neutral-500 font-medium leading-relaxed">
+                                                {product.description}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </SectionWrapper>
+                );
+            })}
         </div>
     );
 }
