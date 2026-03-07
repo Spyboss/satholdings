@@ -225,7 +225,7 @@ export default function HomePage() {
                             BUILDING DREAMS. EMPOWERING LIFESTYLES.
                         </p>
                         <p className="mt-3 text-[12px] font-medium text-neutral-300 sm:text-sm lg:text-lg max-w-xl mx-auto lg:mx-0 drop-shadow">
-                            Pioneering Sri Lanka's First Rice Cooker Manufacturing alongside our established legacy in engineering and infrastructure.
+                            Pioneering Sri Lanka&apos;s First Rice Cooker Manufacturing alongside our established legacy in engineering and infrastructure.
                         </p>
                         <Link
                             href="#portfolio"
