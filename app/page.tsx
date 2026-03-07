@@ -26,7 +26,7 @@ const heroPanels = [
     {
         title: "Agro",
         image:
-            "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1800&q=80",
+            "https://res.cloudinary.com/dthx4fxte/image/upload/v1772847556/Agri_u4loii.jpg",
     },
 ];
 
