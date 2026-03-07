@@ -330,22 +330,37 @@ export default function HomePage() {
             </section>
 
             <section className="mx-auto mt-8 max-w-[1400px] px-4 sm:px-6 lg:px-8">
-                <div className="rounded-3xl border border-neutral-100 bg-white px-6 py-12 shadow-sm relative overflow-hidden sm:px-12 sm:py-16">
+                <div className="rounded-3xl border border-neutral-100 bg-white px-6 py-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] relative overflow-hidden sm:px-12 sm:py-16">
                     <div className="absolute -left-10 -top-10 h-32 w-32 rounded-full bg-primary/5 blur-3xl"></div>
                     <div className="absolute -bottom-10 -right-10 h-32 w-32 rounded-full bg-secondary/5 blur-3xl"></div>
 
-                    <h3 className="relative text-center font-heading text-3xl font-extrabold uppercase text-primary sm:text-4xl">
-                        Message From The Managing Director
-                    </h3>
-                    <p className="relative mx-auto mt-6 max-w-4xl text-center text-sm leading-relaxed text-slate-700 sm:text-base md:text-lg">
-                        &ldquo;From construction and trading to renewable energy,
-                        agriculture, and now electronics manufacturing, our commitment
-                        has remained the same: building practical solutions that
-                        empower the Sri Lankan people.&rdquo;
-                    </p>
-                    <p className="relative mt-8 text-center text-[11px] font-extrabold uppercase tracking-widest text-secondary">
-                        &mdash; Mr. Anura Lokugamage, Managing Director
-                    </p>
+                    <div className="flex flex-col md:flex-row items-center gap-10 max-w-5xl mx-auto relative z-10">
+                        <div className="shrink-0 relative">
+                            <div className="absolute inset-0 bg-secondary/20 rounded-full blur-xl transform scale-110"></div>
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src="/md-photo.jpg"
+                                alt="Mr. Anura Lokugamage, Managing Director"
+                                className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow-xl relative z-10"
+                            />
+                        </div>
+
+                        <div className="flex-1 text-center md:text-left">
+                            <h3 className="font-heading text-2xl font-extrabold uppercase text-primary sm:text-3xl mb-6">
+                                Message From The Managing Director
+                            </h3>
+                            <p className="text-sm leading-relaxed text-slate-700 sm:text-base md:text-lg italic font-medium relative">
+                                <span className="absolute -top-6 -left-4 text-6xl text-primary/10 font-serif">&ldquo;</span>
+                                From construction and trading to renewable energy,
+                                agriculture, and now electronics manufacturing, our commitment
+                                has remained the same: building practical solutions that
+                                empower the Sri Lankan people.
+                            </p>
+                            <p className="mt-6 text-[11px] font-extrabold uppercase tracking-widest text-secondary">
+                                &mdash; Mr. Anura Lokugamage
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
