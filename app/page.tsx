@@ -112,7 +112,7 @@ const milestones = [
         title: "SAT Electronics rice cooker line launched",
         date: "2026",
         image:
-            "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?auto=format&fit=crop&w=900&q=80",
+            "https://res.cloudinary.com/dthx4fxte/image/upload/v1772846043/news151214-1_nuw1bg.jpg",
     },
 ];
 
