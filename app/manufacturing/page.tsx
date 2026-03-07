@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/ui/PageHero";
 import SectionWrapper from "@/components/layout/SectionWrapper";
+import Reveal from "@/components/ui/Reveal";
 import { COMPANY } from "@/lib/constants";
 import { createBreadcrumbSchema } from "@/lib/structuredData";
 
@@ -103,9 +104,10 @@ export default function ManufacturingPage() {
                                 desc: "Each unit is individually tested for safety and performance before packaging.",
                                 icon: "✅"
                             },
-                        ].map((item) => (
-                            <div
+                        ].map((item, index) => (
+                            <Reveal
                                 key={item.title}
+                                delay={index * 0.15}
                                 className="group p-8 bg-white rounded-3xl border border-neutral-100 shadow-[0_8px_30px_rgb(0,0,0,0.02)] transition-all hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:-translate-y-2 relative overflow-hidden"
                             >
                                 <div className="absolute top-0 right-0 w-24 h-24 bg-secondary/5 rounded-bl-[100px] -mr-4 -mt-4 transition-transform duration-500 group-hover:scale-150" />
@@ -114,7 +116,7 @@ export default function ManufacturingPage() {
                                     {item.title}
                                 </h3>
                                 <p className="text-[13px] font-medium text-neutral-500 leading-relaxed relative z-10">{item.desc}</p>
-                            </div>
+                            </Reveal>
                         ))}
                     </div>
                 </div>
@@ -171,7 +173,11 @@ export default function ManufacturingPage() {
                                 { title: "Quality Control", subtitle: "& Testing" },
                                 { title: "Packaging", subtitle: "& Distribution" },
                             ].map((step, index) => (
-                                <div key={step.title} className="relative z-10 flex flex-col items-center text-center group">
+                                <Reveal
+                                    key={step.title}
+                                    delay={index * 0.15}
+                                    className="relative z-10 flex flex-col items-center text-center group"
+                                >
                                     <div className="w-24 h-24 mb-6 rounded-full bg-white border-4 border-neutral-50 shadow-[0_8px_30px_rgb(0,0,0,0.06)] flex items-center justify-center text-2xl font-black text-secondary group-hover:bg-secondary group-hover:text-white group-hover:border-secondary-light transition-all duration-300">
                                         0{index + 1}
                                     </div>
@@ -181,7 +187,7 @@ export default function ManufacturingPage() {
                                     <p className="text-[12px] text-neutral-400 font-bold uppercase tracking-widest">
                                         {step.subtitle}
                                     </p>
-                                </div>
+                                </Reveal>
                             ))}
                         </div>
                     </div>

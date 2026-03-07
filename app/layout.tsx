@@ -23,25 +23,33 @@ const rajdhani = Rajdhani({
 export const metadata: Metadata = {
     metadataBase: new URL(COMPANY.domain),
     title: {
-        default: `${COMPANY.name} - Engineering · Manufacturing · Trading`,
+        default: "SAT Holdings Engineering",
         template: `%s - ${COMPANY.name}`,
     },
     description:
-        "SAT Holdings is a diversified Sri Lankan corporation operating in engineering & construction, rice cooker manufacturing, and import & trading.",
+        "Sri Lankan engineering and construction company behind the country's first rice cooker manufacturing project.",
     openGraph: {
-        title: `${COMPANY.name} - Engineering · Manufacturing · Trading`,
+        title: "SAT Holdings Pvt LTD",
         description:
-            "SAT Holdings is a diversified Sri Lankan corporation operating in engineering & construction, rice cooker manufacturing, and import & trading.",
+            "Engineering, construction and manufacturing projects across Sri Lanka.",
         url: COMPANY.domain,
         siteName: COMPANY.name,
         locale: "en_LK",
         type: "website",
+        images: [
+            {
+                url: "/og-image.jpg",
+                width: 1200,
+                height: 630,
+            },
+        ],
     },
     twitter: {
         card: "summary_large_image",
-        title: `${COMPANY.name} - Engineering · Manufacturing · Trading`,
+        title: "SAT Holdings Pvt LTD",
         description:
-            "SAT Holdings is a diversified Sri Lankan corporation operating in engineering & construction, rice cooker manufacturing, and import & trading.",
+            "Engineering, construction and manufacturing projects across Sri Lanka.",
+        images: ["/og-image.jpg"],
     },
     icons: {
         icon: "/assets/icons/favicon.svg",

@@ -3,6 +3,7 @@ import PageHero from "@/components/ui/PageHero";
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import GridLayout from "@/components/ui/GridLayout";
 import Card from "@/components/ui/Card";
+import Reveal from "@/components/ui/Reveal";
 import { ENGINEERING_SERVICES, COMPANY } from "@/lib/constants";
 import { createBreadcrumbSchema } from "@/lib/structuredData";
 
@@ -44,7 +45,11 @@ export default function EngineeringPage() {
                     {ENGINEERING_SERVICES.map((service, i) => {
                         const icons = ["🏗️", "🛣️", "🌱", "🚜", "👷"];
                         return (
-                            <div key={service.title} className={`group relative p-8 rounded-3xl bg-white border border-neutral-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] ${i === 3 ? "lg:col-span-2 lg:flex lg:items-center lg:gap-8 lg:p-10" : ""} ${i === 4 ? "lg:col-span-1" : ""}`}>
+                            <Reveal
+                                key={service.title}
+                                delay={i * 0.1}
+                                className={`group relative p-8 rounded-3xl bg-white border border-neutral-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] ${i === 3 ? "lg:col-span-2 lg:flex lg:items-center lg:gap-8 lg:p-10" : ""} ${i === 4 ? "lg:col-span-1" : ""}`}
+                            >
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-bl-full -mr-8 -mt-8 transition-transform duration-500 group-hover:scale-150 ease-out" />
                                 <div className={`text-4xl mb-6 ${i === 3 ? "lg:mb-0 lg:text-5xl" : ""}`}>
                                     {icons[i] || "🛠️"}
@@ -57,7 +62,7 @@ export default function EngineeringPage() {
                                         {service.description}
                                     </p>
                                 </div>
-                            </div>
+                            </Reveal>
                         );
                     })}
                 </div>
@@ -90,8 +95,9 @@ export default function EngineeringPage() {
                                 { title: "Construction Monitoring", desc: "Real-time daily site supervision" },
                                 { title: "Final Verification", desc: "Handover standard compliance" }
                             ].map((step, index) => (
-                                <div
+                                <Reveal
                                     key={step.title}
+                                    delay={0.2 + (index * 0.1)}
                                     className="relative group bg-white/5 backdrop-blur-md rounded-3xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:-translate-y-2"
                                 >
                                     <div className="w-14 h-14 mx-auto bg-secondary text-primary-dark font-black rounded-full flex items-center justify-center text-xl mb-6 shadow-[0_0_20px_rgba(212,168,67,0.4)] group-hover:scale-110 transition-transform">
@@ -99,7 +105,7 @@ export default function EngineeringPage() {
                                     </div>
                                     <h3 className="font-extrabold tracking-wider uppercase text-white text-[12px] mb-3 leading-tight">{step.title}</h3>
                                     <p className="text-[11px] text-neutral-400 font-medium">{step.desc}</p>
-                                </div>
+                                </Reveal>
                             ))}
                         </div>
                     </div>
@@ -129,16 +135,17 @@ export default function EngineeringPage() {
                             { name: "Water Bowsers", icon: "💧" },
                             { name: "Dual AC Vans", icon: "🚐" },
                             { name: "4WD Double Cabs", icon: "🛻" },
-                        ].map((item) => (
-                            <div
+                        ].map((item, index) => (
+                            <Reveal
                                 key={item.name}
+                                delay={0.1 * (index % 4)}
                                 className="group flex flex-col items-center justify-center p-6 bg-neutral-50 rounded-2xl border border-neutral-100 transition-all duration-300 hover:bg-white hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:border-secondary/30 hover:-translate-y-1"
                             >
                                 <span className="text-3xl mb-3 grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110">{item.icon}</span>
                                 <span className="text-[12px] font-bold text-neutral-700 uppercase tracking-wider group-hover:text-primary transition-colors">
                                     {item.name}
                                 </span>
-                            </div>
+                            </Reveal>
                         ))}
                     </div>
                 </div>
