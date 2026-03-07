@@ -12,7 +12,7 @@ const heroPanels = [
     {
         title: "Electronics",
         image:
-            "https://res.cloudinary.com/dtnzmhngi/image/upload/v1772183199/535eee07e8fd4c9fabc377cd464c1d74_bqtd4l.png",
+            "https://res.cloudinary.com/dthx4fxte/image/upload/v1772850033/E-LK_1776x1080-888x500-c-default_ia3ttv.jpg",
     },
     {
         title: "Construction",
@@ -211,7 +211,7 @@ export default function HomePage() {
                                 style={{ backgroundImage: `url(${panel.image})` }}
                                 aria-hidden
                             />
-                            <div className="absolute inset-0 bg-slate-900/16" aria-hidden />
+                            <div className="absolute inset-0 bg-slate-900/50" aria-hidden />
                         </div>
                     ))}
                 </div>
