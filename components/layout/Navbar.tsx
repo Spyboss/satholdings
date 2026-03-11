@@ -22,11 +22,11 @@ export default function Navbar() {
                 <div className="flex h-[76px] items-center justify-between gap-4">
                     <Link href="/" className="shrink-0">
                         <Image
-                            src="https://res.cloudinary.com/dtnzmhngi/image/upload/v1772171307/WhatsApp_Image_2026-02-27_at_11.08.37_hf8int.jpg"
+                            src="https://res.cloudinary.com/dthx4fxte/image/upload/v1773220134/Sat_Holdings_Transparent_qyjuzm.png"
                             alt="SAT Holdings logo"
                             width={240}
                             height={240}
-                            className="h-12 w-auto sm:h-14"
+                            className="h-16 w-auto sm:h-18"
                         />
                     </Link>
 

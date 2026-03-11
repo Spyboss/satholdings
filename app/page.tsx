@@ -43,7 +43,7 @@ const portfolioCards = [
         title: "SAT Holdings (Pvt) Ltd",
         subtitle: "Engineering, infrastructure delivery, and strategic trading",
         cta: "View Construction",
-        logo: "https://res.cloudinary.com/dtnzmhngi/image/upload/v1772171307/WhatsApp_Image_2026-02-27_at_11.08.37_hf8int.jpg",
+        logo: "https://res.cloudinary.com/dthx4fxte/image/upload/v1773220134/Sat_Holdings_Transparent_qyjuzm.png",
         href: "/engineering",
         accent: "#ef8f22",
     },
