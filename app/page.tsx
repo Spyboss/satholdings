@@ -339,7 +339,7 @@ export default function HomePage() {
                             <div className="absolute inset-0 bg-secondary/20 rounded-full blur-xl transform scale-110"></div>
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
-                                src="https://res.cloudinary.com/dthx4fxte/image/upload/v1773296258/WhatsApp_Image_2026-03-12_at_11.46.47_l1aeoy.jpg"
+                                src="https://res.cloudinary.com/dthx4fxte/image/upload/v1773296589/WhatsApp_Image_2026-03-12_at_11.52.40_obceh3.jpg"
                                 alt="Mr. Anura Lokugamage, Managing Director"
                                 className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow-xl relative z-10"
                             />
