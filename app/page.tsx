@@ -341,7 +341,7 @@ export default function HomePage() {
                             <img
                                 src="https://res.cloudinary.com/dthx4fxte/image/upload/v1773296589/WhatsApp_Image_2026-03-12_at_11.52.40_obceh3.jpg"
                                 alt="Mr. Anura Lokugamage, Managing Director"
-                                className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow-xl relative z-10"
+                                className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover object-[50%_20%] border-4 border-white shadow-xl relative z-10"
                             />
                         </div>
 
