@@ -346,18 +346,25 @@ export default function HomePage() {
                         </div>
 
                         <div className="flex-1 text-center md:text-left">
-                            <h3 className="font-heading text-2xl font-extrabold uppercase text-primary sm:text-3xl mb-6">
+                            <h3 className="font-heading text-2xl font-extrabold uppercase text-primary sm:text-3xl mb-2">
                                 Message From The Managing Director
                             </h3>
+                            <p className="text-sm font-medium text-secondary italic mb-6">
+                                A Vision Built on Integrity and Local Innovation.
+                            </p>
                             <p className="text-sm leading-relaxed text-slate-700 sm:text-base md:text-lg italic font-medium relative">
                                 <span className="absolute -top-6 -left-4 text-6xl text-primary/10 font-serif">&ldquo;</span>
-                                From construction and trading to renewable energy,
-                                agriculture, and now electronics manufacturing, our commitment
-                                has remained the same: building practical solutions that
-                                empower the Sri Lankan people.
+                                When I founded SAT Holdings Pvt Ltd, my goal was simple: to create a foundation of excellence in construction and trading that could support the growth of our nation. As we evolved, that vision expanded.
+                            </p>
+                            <p className="text-sm leading-relaxed text-slate-700 sm:text-base md:text-lg italic font-medium mt-4">
+                                From providing renewable energy solutions at SAT Energy to securing our food future at SAT Green Agro, and now manufacturing essential home appliances under the &apos;Made in Sri Lanka&apos; label at SAT Electronics, our journey has been defined by one thing—commitment. Alongside my co-director, Mrs. Thilini Lokugamage, we have steered this group to become a multi-industry leader. We don&apos;t just build businesses; we build solutions that empower the Sri Lankan people.
+                            </p>
+                            <p className="text-sm leading-relaxed text-slate-700 sm:text-base md:text-lg italic font-medium mt-4">
+                                Thank you for being a part of our journey.
                             </p>
                             <p className="mt-6 text-[11px] font-extrabold uppercase tracking-widest text-secondary">
-                                &mdash; Mr. Anura Lokugamage
+                                &mdash; Mr. Anura Lokugamage <br/>
+                                Managing Director, SAT Holdings Group
                             </p>
                         </div>
                     </div>
@@ -372,9 +379,9 @@ export default function HomePage() {
                             Our Vision
                         </h3>
                         <p className="mt-4 text-sm leading-loose text-neutral-600 sm:text-base">
-                            To be Sri Lanka&apos;s premier multi-disciplinary conglomerate,
-                            recognized for transforming the nation through local
-                            manufacturing, sustainable energy, and resilient
+                            To be the premier multi-disciplinary conglomerate in Sri Lanka,
+                            recognized for transforming the nation&apos;s landscape through local
+                            manufacturing, sustainable energy, and innovative
                             infrastructure.
                         </p>
                     </article>
@@ -384,11 +391,30 @@ export default function HomePage() {
                             Our Mission
                         </h3>
                         <p className="mt-4 text-sm leading-loose text-neutral-600 sm:text-base">
-                            We empower local industry, expand renewable energy,
-                            strengthen construction and trading excellence, and support
-                            food security while creating jobs and reducing import
-                            dependency.
+                            Under the leadership of Mr. Anura Lokugamage, the SAT Group is dedicated to:
                         </p>
+                        <ul className="mt-3 text-sm leading-loose text-neutral-600 sm:text-base space-y-2">
+                            <li className="flex items-start">
+                                <span className="text-secondary mr-2">•</span>
+                                <span><strong>Empowering Local Industry:</strong> Elevating the &apos;Made in Sri Lanka&apos; label by manufacturing high-quality home appliances at SAT Electronics.</span>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="text-secondary mr-2">•</span>
+                                <span><strong>Powering Sustainability:</strong> Contributing to the National Grid through large-scale renewable projects like our 500kW Tangalle solar plant.</span>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="text-secondary mr-2">•</span>
+                                <span><strong>Building Foundations:</strong> Delivering excellence in construction and global trading through our flagship entity, SAT Holdings Pvt Ltd.</span>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="text-secondary mr-2">•</span>
+                                <span><strong>Nurturing Life:</strong> Advancing food security through technology-driven agricultural practices at SAT Green Agro.</span>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="text-secondary mr-2">•</span>
+                                <span><strong>National Contribution:</strong> Operating with integrity to create jobs, reduce import reliance, and drive economic prosperity for all Sri Lankans.</span>
+                            </li>
+                        </ul>
                     </article>
                 </div>
             </section>
