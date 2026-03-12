@@ -335,13 +335,13 @@ export default function HomePage() {
                     <div className="absolute -bottom-10 -right-10 h-32 w-32 rounded-full bg-secondary/5 blur-3xl"></div>
 
                     <div className="flex flex-col md:flex-row items-center gap-10 max-w-5xl mx-auto relative z-10">
-                        <div className="shrink-0 relative w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden">
+                        <div className="shrink-0 relative">
                             <div className="absolute inset-0 bg-secondary/20 rounded-full blur-xl transform scale-110"></div>
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
-                                src="https://res.cloudinary.com/dthx4fxte/image/upload/v1773296589/WhatsApp_Image_2026-03-12_at_11.52.40_obceh3.jpg"
+                                src="https://res.cloudinary.com/dthx4fxte/image/upload/c_fill,g_face,w_400,h_400/v1773296589/WhatsApp_Image_2026-03-12_at_11.52.40_obceh3.jpg"
                                 alt="Mr. Anura Lokugamage, Managing Director"
-                                className="w-[120%] -translate-y-[10%] border-4 border-white shadow-xl relative z-10"
+                                className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow-xl relative z-10"
                             />
                         </div>
 
