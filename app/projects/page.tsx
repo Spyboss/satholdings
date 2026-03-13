@@ -4,18 +4,18 @@ import SectionWrapper from "@/components/layout/SectionWrapper";
 import Reveal from "@/components/ui/Reveal";
 import SolarGallery from "@/components/gallery/SolarGallery";
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
-import { PROJECTS, CASE_STUDIES, COMPANY } from "@/lib/constants";
+import { CASE_STUDIES, COMPANY } from "@/lib/constants";
 import { createBreadcrumbSchema } from "@/lib/structuredData";
 
 export const metadata: Metadata = {
-    title: "Projects & Case Studies",
+    title: "Solar Energy Projects",
     description:
-        "SAT Holdings project portfolio - Southern Highway works, RDA projects, and flagship case studies including the 500kW Tangalle solar plant.",
+        "SAT Energy Solutions - 500kW Tangalle rooftop solar plant and renewable energy projects contributing to Sri Lanka's national grid.",
 };
 
 const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: COMPANY.domain },
-    { name: "Projects", url: `${COMPANY.domain}/projects` },
+    { name: "Solar Energy Projects", url: `${COMPANY.domain}/projects` },
 ]);
 
 const solarGallery = [
@@ -35,61 +35,12 @@ export default function ProjectsPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
             />
             <PageHero
-                title="Projects & Case Studies"
-                subtitle="A proven track record across highway infrastructure, renewable energy, and local manufacturing milestones."
+                title="Solar Energy Projects"
+                subtitle="Harnessing the power of the sun to deliver clean, sustainable energy solutions for Sri Lanka."
             />
 
-            <SectionWrapper>
-                <div className="max-w-4xl mx-auto">
-                    <h2 className="text-2xl font-bold text-primary font-heading mb-8 text-center">
-                        Project Timeline
-                    </h2>
-                    {/* Timeline */}
-                    <div className="relative">
-                        {/* Timeline line */}
-                        <div className="absolute left-4 sm:left-8 top-0 bottom-0 w-px bg-neutral-200" />
-
-                        <div className="space-y-10">
-                            {PROJECTS.map((project, index) => (
-                                <Reveal
-                                    key={project.title}
-                                    delay={index * 0.1}
-                                    className="relative pl-12 sm:pl-20"
-                                >
-                                    {/* Timeline dot */}
-                                    <div className="absolute left-2.5 sm:left-6.5 top-1 w-3 h-3 bg-secondary rounded-full border-2 border-white shadow-sm" />
-
-                                    {/* Year badge */}
-                                    <span className="inline-block px-2 py-0.5 text-xs font-semibold bg-accent/10 text-accent rounded mb-2">
-                                        {project.year}
-                                    </span>
-
-                                    <h3 className="text-lg font-bold text-primary font-heading mb-1">
-                                        {project.title}
-                                    </h3>
-
-                                    <div className="flex flex-wrap gap-3 text-[11px] font-semibold text-neutral-500 mb-3 uppercase tracking-wider">
-                                        <span>{project.client}</span>
-                                        <span>&bull;</span>
-                                        <span>{project.location}</span>
-                                        <span>&bull;</span>
-                                        <span className="px-2 py-0.5 bg-neutral-100/50 rounded text-neutral-600 border border-neutral-200/50">
-                                            {project.category}
-                                        </span>
-                                    </div>
-
-                                    <p className="text-[13px] text-neutral-500 leading-relaxed">
-                                        {project.description}
-                                    </p>
-                                </Reveal>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </SectionWrapper>
-
             {/* Tangalle Solar Showcase */}
-            <SectionWrapper bg="white">
+            <SectionWrapper>
                 <div className="max-w-6xl mx-auto">
                     <div className="rounded-[2.5rem] bg-neutral-900 px-6 py-12 sm:px-12 sm:py-16 relative overflow-hidden text-center text-white shadow-2xl">
                         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center opacity-20" />
@@ -128,19 +79,19 @@ export default function ProjectsPage() {
                 </div>
             </SectionWrapper>
 
-            {/* Case Studies */}
+            {/* Solar Case Study */}
             <SectionWrapper bg="neutral">
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-2xl sm:text-3xl font-bold text-primary font-heading mb-4 text-center">
-                        Case Studies
+                        Case Study
                     </h2>
                     <p className="text-neutral-600 text-center mb-12 max-w-2xl mx-auto">
-                        Real-world examples of how we deliver exceptional results for our clients.
+                        Real-world examples of how we deliver exceptional renewable energy solutions.
                     </p>
 
                     <div className="space-y-12">
-                        {CASE_STUDIES.map((study, index) => (
-                            <Reveal key={study.slug} delay={index * 0.1}>
+                        {CASE_STUDIES.filter(s => s.slug === "tangalle-solar-plant").map((study) => (
+                            <Reveal key={study.slug}>
                                 <article
                                     className="group bg-white rounded-3xl overflow-hidden border border-neutral-100 shadow-[0_4px_20px_rgb(0,0,0,0.02)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
                                 >
@@ -225,17 +176,16 @@ export default function ProjectsPage() {
                 </div>
             </SectionWrapper>
 
-            {/* Government Credibility */}
+            {/* Renewable Energy Credibility */}
             <SectionWrapper>
                 <div className="max-w-3xl mx-auto text-center">
                     <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-4 font-heading">
-                        Government-Grade Credibility
+                        Sustainable Energy Future
                     </h2>
                     <p className="text-neutral-600 leading-relaxed">
-                        Our portfolio includes projects commissioned by the Road
-                        Development Authority, Southern Highway programs, and renewable
-                        energy initiatives. Each contract reflects our ability to meet
-                        strict standards for quality, safety, and timely delivery.
+                        Our solar projects contribute directly to Sri Lanka&apos;s renewable energy
+                        targets. By connecting commercial-scale installations to the national grid,
+                        we help reduce carbon emissions and decrease reliance on imported fossil fuels.
                     </p>
                 </div>
             </SectionWrapper>
