@@ -33,11 +33,6 @@ export default function ProductsPage() {
             <SectionWrapper>
                 <div className="rounded-3xl border border-neutral-100 bg-white px-6 py-10 shadow-sm sm:p-12 mb-8 group relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none" />
-                    <div className="absolute top-0 right-0 p-6 opacity-10">
-                        <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2L2 22h20L12 2zm0 4.5l6.5 13h-13L12 6.5z" />
-                        </svg>
-                    </div>
 
                     <div className="relative z-10 grid gap-8 md:grid-cols-2 lg:gap-12 items-center">
                         <div>
