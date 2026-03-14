@@ -186,22 +186,24 @@ export const PROJECTS: Project[] = [
     {
         id: "6",
         year: 2021,
-        title: "RDA Hambanthota 100KM Project",
+        title: "RDA Hambanthota 100000 KM Project (Ongoing)",
         client: "Road Development Authority (RDA)",
         location: "Hambanthota, Sri Lanka",
         description:
             "Multi-package support including material mobilization, machinery deployment, and labor coordination.",
         category: "RDA",
+        value: "50M",
     },
     {
         id: "7",
         year: 2021,
-        title: "Polpithigama Wayaba Ela Project",
+        title: "Polpithigama Wayaba Ela Project (Ongoing)",
         client: "Irrigation Sector",
         location: "Polpithigama, Sri Lanka",
         description:
             "Machinery and vehicle supply for irrigation development under program management and design supervision.",
         category: "Irrigation",
+        value: "15M",
     },
 ];
 
