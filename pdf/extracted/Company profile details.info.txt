@@ -1,0 +1,19 @@
+Author:          mahesh manatunga
+Creator:         Microsoft® Word 2019
+Producer:        Microsoft® Word 2019
+CreationDate:    Wed Feb 11 12:27:34 2026 +0530
+ModDate:         Wed Feb 11 12:27:34 2026 +0530
+Custom Metadata: no
+Metadata Stream: yes
+Tagged:          yes
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           2
+Encrypted:       no
+Page size:       612 x 792 pts (letter)
+Page rot:        0
+File size:       117818 bytes
+Optimized:       no
+PDF version:     1.7

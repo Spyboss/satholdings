@@ -1,0 +1,20 @@
+Title:           Corporate Template 1
+Author:          Mahesh Manathunga
+Creator:         Microsoft® PowerPoint® 2019
+Producer:        Microsoft® PowerPoint® 2019
+CreationDate:    Wed Feb 11 12:12:26 2026 +0530
+ModDate:         Wed Feb 11 12:12:26 2026 +0530
+Custom Metadata: no
+Metadata Stream: yes
+Tagged:          yes
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           20
+Encrypted:       no
+Page size:       960 x 540 pts
+Page rot:        0
+File size:       2628806 bytes
+Optimized:       no
+PDF version:     1.7
