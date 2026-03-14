@@ -79,6 +79,61 @@ export default function ProjectsPage() {
                 </div>
             </SectionWrapper>
 
+            {/* SAT Energy Solutions Services */}
+            <SectionWrapper bg="neutral">
+                <div className="max-w-6xl mx-auto">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-primary font-heading mb-4 text-center">
+                        Our Services
+                    </h2>
+                    <p className="text-neutral-600 text-center mb-12 max-w-2xl mx-auto">
+                        Comprehensive renewable energy and energy efficiency solutions tailored to your needs.
+                    </p>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {[
+                            {
+                                title: "Hybrid Solar PV Systems",
+                                description: "Combining solar power with battery storage for uninterrupted, reliable energy supply.",
+                                icon: "☀️",
+                            },
+                            {
+                                title: "Grid-Tied Solar PV Systems",
+                                description: "Connect to the national grid and export excess solar power for additional revenue.",
+                                icon: "🔗",
+                            },
+                            {
+                                title: "Off-Grid Solar PV Systems",
+                                description: "Standalone power solutions designed for remote locations without grid access.",
+                                icon: "🏝️",
+                            },
+                            {
+                                title: "Solar Water Pumping Systems",
+                                description: "Sustainable water supply solutions for agricultural and industrial applications.",
+                                icon: "💧",
+                            },
+                            {
+                                title: "Energy Efficiency Solutions",
+                                description: "LED Lighting, Power Factor Correction, and Load Management for optimized energy usage.",
+                                icon: "⚡",
+                            },
+                        ].map((service) => (
+                            <div
+                                key={service.title}
+                                className="bg-white p-6 rounded-2xl border border-neutral-100 shadow-sm hover:shadow-md transition-shadow"
+                            >
+                                <div className="text-3xl mb-4">{service.icon}</div>
+                                <h3 className="text-lg font-bold text-primary font-heading mb-2">
+                                    {service.title}
+                                </h3>
+                                <p className="text-neutral-500 text-sm leading-relaxed">
+                                    {service.description}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </SectionWrapper>
+
             {/* Solar Case Study */}
             <SectionWrapper bg="neutral">
                 <div className="max-w-4xl mx-auto">
