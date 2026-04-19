@@ -52,9 +52,10 @@ export const metadata: Metadata = {
         images: ["/og-image.jpg"],
     },
     icons: {
-        icon: "/assets/icons/favicon.svg",
-        apple: "/assets/icons/favicon.svg",
+        icon: "/favicon.ico",
+        apple: "/apple-icon.png",
     },
+    manifest: "/manifest.json",
 };
 
 export default function RootLayout({
@@ -65,6 +66,7 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${barlow.variable} ${rajdhani.variable}`}>
             <head>
+                <meta name="apple-mobile-web-app-title" content="MyWebSite" />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
