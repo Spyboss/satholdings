@@ -25,17 +25,28 @@ export default function ContactPage() {
         const form = e.currentTarget;
         const formData = new FormData(form);
 
-        // Honeypot check
-        if (formData.get("botcheck")) {
+        // Honeypot check - spam bots fill this hidden field
+        if (formData.get("company")) {
             setStatus("error");
             setErrorMessage("Spam detected.");
             return;
         }
 
         try {
-            const response = await fetch("https://api.web3forms.com/submit", {
+            const formDataObj = {
+                name: formData.get("name"),
+                email: formData.get("email"),
+                phone: formData.get("phone"),
+                subject: formData.get("subject"),
+                message: formData.get("message"),
+            };
+
+            const response = await fetch("/api/contact", {
                 method: "POST",
-                body: formData,
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formDataObj),
             });
 
             const result = await response.json();
@@ -155,17 +166,10 @@ export default function ContactPage() {
                             </div>
                         ) : (
                             <form onSubmit={handleSubmit} className="space-y-5">
-                                {/* Web3Forms Access Key */}
-                                <input
-                                    type="hidden"
-                                    name="access_key"
-                                    value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY || ""}
-                                />
-
                                 {/* Honeypot - hidden from real users */}
                                 <input
-                                    type="checkbox"
-                                    name="botcheck"
+                                    type="text"
+                                    name="company"
                                     className="hidden"
                                     tabIndex={-1}
                                     autoComplete="off"
