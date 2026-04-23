@@ -1,6 +1,10 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "SAT Holdings Pvt Ltd",
+  "short_name": "SAT Holdings",
+  "description": "SAT Holdings in Sri Lanka across engineering, manufacturing, renewable energy, and trading.",
+  "start_url": "/",
+  "scope": "/",
+  "lang": "en-LK",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +19,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
+  "theme_color": "#1b365d",
   "background_color": "#ffffff",
   "display": "standalone"
 }

@@ -5,18 +5,36 @@ import Reveal from "@/components/ui/Reveal";
 import SolarGallery from "@/components/gallery/SolarGallery";
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
 import { CASE_STUDIES, COMPANY } from "@/lib/constants";
-import { createBreadcrumbSchema } from "@/lib/structuredData";
+import { createMetadata } from "@/lib/metadata";
+import { createBreadcrumbSchema, createCollectionPageSchema, createServiceSchema } from "@/lib/structuredData";
 
-export const metadata: Metadata = {
-    title: "Solar Energy Projects",
-    description:
-        "SAT Energy Solutions - 500kW Tangalle rooftop solar plant and renewable energy projects contributing to Sri Lanka's national grid.",
-};
+const pageDescription =
+    "SAT Energy Solutions showcases solar energy projects in Sri Lanka including the 500kW Tangalle rooftop solar plant connected to the national grid.";
+
+export const metadata: Metadata = createMetadata({
+    title: "Solar Energy Projects in Sri Lanka",
+    description: pageDescription,
+    path: "/projects",
+    keywords: ["solar projects Sri Lanka", "rooftop solar Sri Lanka", "SAT Energy Solutions"],
+});
 
 const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: COMPANY.domain },
     { name: "Solar Energy Projects", url: `${COMPANY.domain}/projects` },
 ]);
+
+const projectsPageSchema = createCollectionPageSchema({
+    name: "SAT Energy Solutions Projects",
+    description: pageDescription,
+    path: "/projects",
+});
+
+const renewableServiceSchema = createServiceSchema({
+    name: "Renewable Energy Solutions",
+    description: pageDescription,
+    path: "/projects",
+    serviceType: "Solar energy projects",
+});
 
 const solarGallery = [
     "/assets/gallery/1.jpg",
@@ -33,6 +51,14 @@ export default function ProjectsPage() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(projectsPageSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(renewableServiceSchema) }}
             />
             <PageHero
                 title="Solar Energy Projects"

@@ -3,18 +3,36 @@ import PageHero from "@/components/ui/PageHero";
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import Reveal from "@/components/ui/Reveal";
 import { COMPANY, CASE_STUDIES } from "@/lib/constants";
-import { createBreadcrumbSchema } from "@/lib/structuredData";
+import { createMetadata } from "@/lib/metadata";
+import { createBreadcrumbSchema, createCollectionPageSchema, createServiceSchema } from "@/lib/structuredData";
 
-export const metadata: Metadata = {
-    title: "Manufacturing",
-    description:
-        "Sri Lanka's first rice cooker manufacturing facility - SAT Holdings Manufacturing division. Quality assurance, local production, future expansion.",
-};
+const pageDescription =
+    "SAT Holdings manufacturing division operates Sri Lanka's first rice cooker manufacturing line with local quality control, product testing, and after-sales support.";
+
+export const metadata: Metadata = createMetadata({
+    title: "Rice Cooker Manufacturing in Sri Lanka",
+    description: pageDescription,
+    path: "/manufacturing",
+    keywords: ["rice cooker manufacturing Sri Lanka", "made in Sri Lanka appliances", "SAT Electronics"],
+});
 
 const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: COMPANY.domain },
     { name: "Manufacturing", url: `${COMPANY.domain}/manufacturing` },
 ]);
+
+const manufacturingPageSchema = createCollectionPageSchema({
+    name: "SAT Holdings Manufacturing",
+    description: pageDescription,
+    path: "/manufacturing",
+});
+
+const manufacturingServiceSchema = createServiceSchema({
+    name: "Consumer Appliance Manufacturing",
+    description: pageDescription,
+    path: "/manufacturing",
+    serviceType: "Manufacturing",
+});
 
 export default function ManufacturingPage() {
     return (
@@ -22,6 +40,14 @@ export default function ManufacturingPage() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(manufacturingPageSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(manufacturingServiceSchema) }}
             />
             <PageHero
                 title="Manufacturing"

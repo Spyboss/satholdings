@@ -1,12 +1,35 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { createMetadata } from "@/lib/metadata";
+import { createCollectionPageSchema, createWebPageSchema } from "@/lib/structuredData";
 
-export const metadata: Metadata = {
-    title: "SAT Holdings Group - Diversified Business Portfolio",
-    description:
-        "SAT Holdings Group across engineering, trading, renewable energy, agro, and local appliance manufacturing in Sri Lanka.",
-};
+const homeDescription =
+    "Explore SAT Holdings in Sri Lanka across engineering and construction, manufacturing, renewable energy projects, and strategic trading initiatives.";
+
+export const metadata: Metadata = createMetadata({
+    title: "SAT Holdings Group in Sri Lanka",
+    description: homeDescription,
+    path: "/",
+    keywords: [
+        "SAT Holdings Group",
+        "Sri Lankan business group",
+        "renewable energy Sri Lanka",
+        "manufacturing Sri Lanka",
+    ],
+});
+
+const homePageSchema = createWebPageSchema({
+    name: "SAT Holdings Group in Sri Lanka",
+    description: homeDescription,
+    path: "",
+});
+
+const portfolioSchema = createCollectionPageSchema({
+    name: "SAT Holdings Business Portfolio",
+    description: homeDescription,
+    path: "",
+});
 
 const heroPanels = [
     {
@@ -199,6 +222,14 @@ function PillarIcon({ type }: { type: (typeof reasons)[number]["icon"] }) {
 export default function HomePage() {
     return (
         <div className="bg-white pb-14">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(homePageSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(portfolioSchema) }}
+            />
             <section className="relative border-y border-black/15 bg-white">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                     {heroPanels.map((panel) => (

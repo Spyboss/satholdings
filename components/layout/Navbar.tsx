@@ -3,15 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-
-const headerLinks = [
-    { label: "Home", href: "/" },
-    { label: "Engineering", href: "/engineering" },
-    { label: "Products", href: "/products" },
-    { label: "Projects", href: "/projects" },
-    { label: "Manufacturing", href: "/manufacturing" },
-    { label: "Contact Us", href: "/contact" },
-];
+import { COMPANY, NAV_LINKS } from "@/lib/constants";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,17 +13,20 @@ export default function Navbar() {
             <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-[76px] items-center justify-between gap-4">
                     <Link href="/" className="shrink-0">
-                        <Image
-                            src="https://res.cloudinary.com/dthx4fxte/image/upload/v1773220134/Sat_Holdings_Transparent_qyjuzm.png"
-                            alt="SAT Holdings logo"
-                            width={240}
-                            height={240}
-                            className="h-16 w-auto sm:h-18"
-                        />
+                        <div className="flex items-center gap-3">
+                            <Image
+                                src="https://res.cloudinary.com/dthx4fxte/image/upload/v1773220134/Sat_Holdings_Transparent_qyjuzm.png"
+                                alt="SAT Holdings logo"
+                                width={240}
+                                height={240}
+                                className="h-16 w-auto sm:h-18"
+                            />
+                            <span className="sr-only">{COMPANY.name.replace(" Pvt Ltd", "")}</span>
+                        </div>
                     </Link>
 
                     <ul className="hidden items-center gap-1 md:flex">
-                        {headerLinks.map((link, index) => (
+                        {NAV_LINKS.map((link, index) => (
                             <li key={`${link.href}-${link.label}`} className="flex items-center">
                                 <Link
                                     href={link.href}
@@ -39,7 +34,7 @@ export default function Navbar() {
                                 >
                                     {link.label}
                                 </Link>
-                                {index < headerLinks.length - 1 && (
+                                {index < NAV_LINKS.length - 1 && (
                                     <span className="text-neutral-300 text-xs">|</span>
                                 )}
                             </li>
@@ -81,7 +76,7 @@ export default function Navbar() {
                 {isOpen && (
                     <div className="border-t border-neutral-100 py-3 md:hidden">
                         <ul className="flex flex-col gap-1">
-                            {headerLinks.map((link) => (
+                            {NAV_LINKS.map((link) => (
                                 <li key={`${link.href}-${link.label}`}>
                                     <Link
                                         href={link.href}

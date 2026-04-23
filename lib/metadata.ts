@@ -8,22 +8,43 @@ export function createMetadata({
     description,
     path = "",
     ogImage,
+    keywords = [],
+    type = "website",
 }: {
     title: string;
     description: string;
     path?: string;
     ogImage?: string;
+    keywords?: string[];
+    type?: "website" | "article";
 }): Metadata {
-    const fullTitle = `${title} - ${COMPANY.name}`;
+    const fullTitle = title === COMPANY.name ? title : `${title} - ${COMPANY.name}`;
     const url = `${BASE_URL}${path}`;
-    const image = ogImage || `${BASE_URL}/assets/og/default.png`;
+    const image = ogImage || `${BASE_URL}/og-image.jpg`;
 
     return {
         title: fullTitle,
         description,
         metadataBase: new URL(BASE_URL),
+        applicationName: COMPANY.name,
         alternates: {
             canonical: url,
+        },
+        keywords: [...COMPANY.keywords, ...keywords],
+        category: "Engineering, Construction, Manufacturing, Renewable Energy",
+        authors: [{ name: COMPANY.name, url: BASE_URL }],
+        creator: COMPANY.name,
+        publisher: COMPANY.legalName,
+        robots: {
+            index: true,
+            follow: true,
+            googleBot: {
+                index: true,
+                follow: true,
+                "max-image-preview": "large",
+                "max-snippet": -1,
+                "max-video-preview": -1,
+            },
         },
         openGraph: {
             title: fullTitle,
@@ -31,7 +52,7 @@ export function createMetadata({
             url,
             siteName: COMPANY.name,
             locale: "en_LK",
-            type: "website",
+            type,
             images: [
                 {
                     url: image,

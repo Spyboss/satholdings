@@ -4,18 +4,36 @@ import SectionWrapper from "@/components/layout/SectionWrapper";
 import GridLayout from "@/components/ui/GridLayout";
 import Card from "@/components/ui/Card";
 import { PRODUCT_CATEGORIES, COMPANY } from "@/lib/constants";
-import { createBreadcrumbSchema } from "@/lib/structuredData";
+import { createMetadata } from "@/lib/metadata";
+import { createBreadcrumbSchema, createCollectionPageSchema, createServiceSchema } from "@/lib/structuredData";
 
-export const metadata: Metadata = {
-    title: "Import & Trading",
-    description:
-        "SAT Holdings product catalog - SAT Electronics (rice cookers, electric kettles), SAT Aluminum Profiles, and SAT Bathware. Quality products sourced globally.",
-};
+const pageDescription =
+    "Browse SAT Holdings products including SAT Electronics rice cookers and kettles, aluminum profiles, and bathware for Sri Lankan homes and projects.";
+
+export const metadata: Metadata = createMetadata({
+    title: "Products, Import and Trading",
+    description: pageDescription,
+    path: "/products",
+    keywords: ["SAT rice cooker", "aluminum profiles Sri Lanka", "bathware Sri Lanka", "import trading Sri Lanka"],
+});
 
 const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: COMPANY.domain },
     { name: "Import & Trading", url: `${COMPANY.domain}/products` },
 ]);
+
+const productsPageSchema = createCollectionPageSchema({
+    name: "SAT Holdings Products and Trading",
+    description: pageDescription,
+    path: "/products",
+});
+
+const tradingServiceSchema = createServiceSchema({
+    name: "Import and Trading Services",
+    description: pageDescription,
+    path: "/products",
+    serviceType: "Import and trading",
+});
 
 export default function ProductsPage() {
     return (
@@ -23,6 +41,14 @@ export default function ProductsPage() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(productsPageSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(tradingServiceSchema) }}
             />
             <PageHero
                 title="Import & Trading"

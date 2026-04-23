@@ -5,18 +5,36 @@ import GridLayout from "@/components/ui/GridLayout";
 import Card from "@/components/ui/Card";
 import Reveal from "@/components/ui/Reveal";
 import { ENGINEERING_SERVICES, PROJECTS, CASE_STUDIES, COMPANY } from "@/lib/constants";
-import { createBreadcrumbSchema } from "@/lib/structuredData";
+import { createMetadata } from "@/lib/metadata";
+import { createBreadcrumbSchema, createCollectionPageSchema, createServiceSchema } from "@/lib/structuredData";
 
-export const metadata: Metadata = {
-    title: "Engineering & Construction",
-    description:
-        "SAT Holdings engineering division - building construction, road construction, soil protection, and heavy machinery hiring across Sri Lanka.",
-};
+const pageDescription =
+    "SAT Holdings engineering and construction services in Sri Lanka including building construction, road construction, soil protection, manpower support, and heavy machinery hiring.";
+
+export const metadata: Metadata = createMetadata({
+    title: "Engineering and Construction Services in Sri Lanka",
+    description: pageDescription,
+    path: "/engineering",
+    keywords: ["building construction Sri Lanka", "road construction Sri Lanka", "machinery hiring Sri Lanka"],
+});
 
 const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: COMPANY.domain },
     { name: "Engineering & Construction", url: `${COMPANY.domain}/engineering` },
 ]);
+
+const engineeringPageSchema = createCollectionPageSchema({
+    name: "SAT Holdings Engineering and Construction Services",
+    description: pageDescription,
+    path: "/engineering",
+});
+
+const engineeringServiceSchema = createServiceSchema({
+    name: "Engineering and Construction Services",
+    description: pageDescription,
+    path: "/engineering",
+    serviceType: "Engineering and construction",
+});
 
 export default function EngineeringPage() {
     return (
@@ -24,6 +42,14 @@ export default function EngineeringPage() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(engineeringPageSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(engineeringServiceSchema) }}
             />
             <PageHero
                 title="Engineering & Construction"

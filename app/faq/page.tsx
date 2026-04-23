@@ -3,18 +3,29 @@ import PageHero from "@/components/ui/PageHero";
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import FAQAccordion from "@/components/faq/FAQAccordion";
 import { FAQS, COMPANY } from "@/lib/constants";
-import { createBreadcrumbSchema } from "@/lib/structuredData";
+import { createMetadata } from "@/lib/metadata";
+import { createBreadcrumbSchema, createCollectionPageSchema } from "@/lib/structuredData";
 
-export const metadata: Metadata = {
+const pageDescription =
+    "Find answers about SAT Holdings services, projects, products, manufacturing, and operations across Sri Lanka.";
+
+export const metadata: Metadata = createMetadata({
     title: "Frequently Asked Questions",
-    description:
-        "Find answers to common questions about SAT Holdings services, projects, products, and company operations in Sri Lanka.",
-};
+    description: pageDescription,
+    path: "/faq",
+    keywords: ["SAT Holdings FAQ", "SAT Holdings questions", "Sri Lanka engineering company FAQ"],
+});
 
 const breadcrumbSchema = createBreadcrumbSchema([
     { name: "Home", url: COMPANY.domain },
     { name: "FAQ", url: `${COMPANY.domain}/faq` },
 ]);
+
+const faqPageSchema = createCollectionPageSchema({
+    name: "SAT Holdings Frequently Asked Questions",
+    description: pageDescription,
+    path: "/faq",
+});
 
 const faqSchema = {
     "@context": "https://schema.org",
@@ -35,6 +46,10 @@ export default function FAQPage() {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
             />
             <script
                 type="application/ld+json"

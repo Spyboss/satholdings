@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Barlow, Rajdhani } from "next/font/google";
 import { COMPANY } from "@/lib/constants";
-import { organizationSchema } from "@/lib/structuredData";
+import { createMetadata } from "@/lib/metadata";
+import { organizationSchema, websiteSchema } from "@/lib/structuredData";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
@@ -21,41 +22,31 @@ const rajdhani = Rajdhani({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL(COMPANY.domain),
-    title: {
-        default: "SAT Holdings Engineering",
-        template: `%s - ${COMPANY.name}`,
-    },
-    description:
-        "Sri Lankan engineering and construction company behind the country's first rice cooker manufacturing project.",
-    openGraph: {
-        title: "SAT Holdings Pvt LTD",
-        description:
-            "Engineering, construction and manufacturing projects across Sri Lanka.",
-        url: COMPANY.domain,
-        siteName: COMPANY.name,
-        locale: "en_LK",
-        type: "website",
-        images: [
-            {
-                url: "/og-image.jpg",
-                width: 1200,
-                height: 630,
-            },
+    ...createMetadata({
+        title: COMPANY.name,
+        description: COMPANY.description,
+        keywords: [
+            "Sri Lanka construction",
+            "Sri Lanka engineering",
+            "SAT Energy Solutions",
+            "SAT Electronics",
+            "SAT Green Agro",
         ],
-    },
-    twitter: {
-        card: "summary_large_image",
-        title: "SAT Holdings Pvt LTD",
-        description:
-            "Engineering, construction and manufacturing projects across Sri Lanka.",
-        images: ["/og-image.jpg"],
+    }),
+    title: {
+        default: COMPANY.name,
+        template: `%s - ${COMPANY.name}`,
     },
     icons: {
         icon: "/favicon.ico",
         apple: "/apple-icon.png",
     },
     manifest: "/manifest.json",
+    appleWebApp: {
+        title: COMPANY.name,
+        capable: true,
+        statusBarStyle: "default",
+    },
 };
 
 export default function RootLayout({
@@ -66,11 +57,17 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${barlow.variable} ${rajdhani.variable}`}>
             <head>
-                <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+                <meta name="apple-mobile-web-app-title" content={COMPANY.name} />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
                         __html: JSON.stringify(organizationSchema),
+                    }}
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(websiteSchema),
                     }}
                 />
             </head>
