@@ -58,7 +58,7 @@ const portfolioCards = [
         title: "SAT Electricals (Pvt) Ltd",
         subtitle: "Local appliance manufacturing for Sri Lankan households",
         cta: "View Electricals",
-        logo: "https://res.cloudinary.com/dtnzmhngi/image/upload/v1772171307/WhatsApp_Image_2026-02-27_at_11.08.39_j5iktg.jpg",
+        logo: "https://res.cloudinary.com/dthx4fxte/image/upload/v1777109880/Image_lq49pi.png",
         href: "/products",
         accent: "#0b76d1",
     },
