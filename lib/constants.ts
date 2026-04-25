@@ -67,7 +67,7 @@ export const DIVISIONS: Division[] = [
     {
         slug: "trading",
         title: "Import & Trading",
-        tagline: "Electronics, aluminum profiles, and bathware, sourced globally.",
+        tagline: "Electricals, aluminum profiles, and bathware, sourced globally.",
         href: "/products",
         icon: "📦",
     },
@@ -103,7 +103,7 @@ export const ENGINEERING_SERVICES = [
 
 export const PRODUCT_CATEGORIES = [
     {
-        name: "SAT Electronics",
+        name: "SAT Electricals",
         products: [
             {
                 title: "Rice Cookers",
@@ -227,7 +227,7 @@ export const PROJECTS: Project[] = [
 export const FAQS = [
     {
         question: "What services does SAT Holdings provide?",
-        answer: "SAT Holdings operates in three main divisions: Engineering & Construction (building construction, road construction, soil protection, and machinery hiring), Manufacturing (Sri Lanka's first rice cooker manufacturing facility), and Import & Trading (electronics, aluminum profiles, and bathware products).",
+        answer: "SAT Holdings operates in three main divisions: Engineering & Construction (building construction, road construction, soil protection, and machinery hiring), Manufacturing (Sri Lanka's first rice cooker manufacturing facility), and Import & Trading (electricals, aluminum profiles, and bathware products).",
     },
     {
         question: "Where is SAT Holdings located?",
@@ -243,7 +243,7 @@ export const FAQS = [
     },
     {
         question: "Are SAT rice cookers locally manufactured?",
-        answer: "Yes. SAT Electronics, part of the SAT Holdings Group, operates Sri Lanka's first rice cooker manufacturing line with local testing, local service support, and a 12-month manufacturer warranty.",
+        answer: "Yes. SAT Electricals, part of the SAT Holdings Group, operates Sri Lanka's first rice cooker manufacturing line with local testing, local service support, and a 12-month manufacturer warranty.",
     },
     {
         question: "What is SAT Energy Solutions' flagship renewable project?",
@@ -259,7 +259,7 @@ export const FAQS = [
     },
     {
         question: "Does SAT Holdings offer product warranties?",
-        answer: "Yes, all SAT products including rice cookers, electronics, and bathware come with manufacturer warranties. Specific warranty terms vary by product - contact us for details.",
+        answer: "Yes, all SAT products including rice cookers, electricals, and bathware come with manufacturer warranties. Specific warranty terms vary by product - contact us for details.",
     },
 ] as const;
 
@@ -306,7 +306,7 @@ export const CASE_STUDIES = [
         year: 2026,
         category: "Manufacturing",
         challenge: "Sri Lanka needed reliable, locally engineered household appliances that reduce import dependency while meeting local usage conditions.",
-        solution: "SAT Electronics established a local manufacturing line focused on durability, energy efficiency, and safety with units optimized for Sri Lankan power standards.",
+        solution: "SAT Electricals established a local manufacturing line focused on durability, energy efficiency, and safety with units optimized for Sri Lankan power standards.",
         results: [
             "Made in Sri Lanka rice cooker line launched",
             "1.8L, 2.2L, and 2.8L product variants available",

@@ -69,7 +69,7 @@ Notes:
 
 9. Corporate positioning changes materially across documents.
    - `pdf/extracted/SAT HOLDINGS 2.txt:14`-`pdf/extracted/SAT HOLDINGS 2.txt:20` positions the company as a construction service provider.
-   - `pdf/extracted/Message from the Managing Director.txt:23`-`pdf/extracted/Message from the Managing Director.txt:40` positions it as a diversified conglomerate spanning energy, agro, electronics, and infrastructure.
+   - `pdf/extracted/Message from the Managing Director.txt:23`-`pdf/extracted/Message from the Managing Director.txt:40` positions it as a diversified conglomerate spanning energy, agro, electricals, and infrastructure.
    - This may be intentional rebranding, but the materials are not aligned.
 
 ## Quality and credibility issues

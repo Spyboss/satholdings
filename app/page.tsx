@@ -33,7 +33,7 @@ const portfolioSchema = createCollectionPageSchema({
 
 const heroPanels = [
     {
-        title: "Electronics",
+        title: "Electricals",
         image:
             "https://res.cloudinary.com/dthx4fxte/image/upload/v1772850033/E-LK_1776x1080-888x500-c-default_ia3ttv.jpg",
     },
@@ -55,9 +55,9 @@ const heroPanels = [
 
 const portfolioCards = [
     {
-        title: "SAT Electronics (Pvt) Ltd",
+        title: "SAT Electricals (Pvt) Ltd",
         subtitle: "Local appliance manufacturing for Sri Lankan households",
-        cta: "View Electronics",
+        cta: "View Electricals",
         logo: "https://res.cloudinary.com/dtnzmhngi/image/upload/v1772171307/WhatsApp_Image_2026-02-27_at_11.08.39_j5iktg.jpg",
         href: "/products",
         accent: "#0b76d1",
@@ -132,7 +132,7 @@ const milestones = [
             "/assets/gallery/2.jpg",
     },
     {
-        title: "SAT Electronics rice cooker line launched",
+        title: "SAT Electricals rice cooker line launched",
         date: "2026",
         image:
             "https://res.cloudinary.com/dthx4fxte/image/upload/v1772846043/news151214-1_nuw1bg.jpg",
@@ -388,7 +388,7 @@ export default function HomePage() {
                                 When I founded SAT Holdings Pvt Ltd, my goal was simple: to create a foundation of excellence in construction and trading that could support the growth of our nation. As we evolved, that vision expanded.
                             </p>
                             <p className="text-sm leading-relaxed text-slate-700 sm:text-base md:text-lg italic font-medium mt-4">
-                                From providing renewable energy solutions at SAT Energy to securing our food future at SAT Green Agro, and now manufacturing essential home appliances under the &apos;Made in Sri Lanka&apos; label at SAT Electronics, our journey has been defined by one thing—commitment. Alongside my co-director, Mrs. Thilini Lokugamage, we have steered this group to become a multi-industry leader. We don&apos;t just build businesses; we build solutions that empower the Sri Lankan people.
+                                From providing renewable energy solutions at SAT Energy to securing our food future at SAT Green Agro, and now manufacturing essential home appliances under the &apos;Made in Sri Lanka&apos; label at SAT Electricals, our journey has been defined by one thing—commitment. Alongside my co-director, Mrs. Thilini Lokugamage, we have steered this group to become a multi-industry leader. We don&apos;t just build businesses; we build solutions that empower the Sri Lankan people.
                             </p>
                             <p className="text-sm leading-relaxed text-slate-700 sm:text-base md:text-lg italic font-medium mt-4">
                                 Thank you for being a part of our journey.
@@ -427,7 +427,7 @@ export default function HomePage() {
                         <ul className="mt-3 text-sm leading-loose text-neutral-600 sm:text-base space-y-2">
                             <li className="flex items-start">
                                 <span className="text-secondary mr-2">•</span>
-                                <span><strong>Empowering Local Industry:</strong> Elevating the &apos;Made in Sri Lanka&apos; label by manufacturing high-quality home appliances at SAT Electronics.</span>
+                                <span><strong>Empowering Local Industry:</strong> Elevating the &apos;Made in Sri Lanka&apos; label by manufacturing high-quality home appliances at SAT Electricals.</span>
                             </li>
                             <li className="flex items-start">
                                 <span className="text-secondary mr-2">•</span>

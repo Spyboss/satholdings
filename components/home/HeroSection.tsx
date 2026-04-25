@@ -33,7 +33,7 @@ export default function HeroSection() {
                     {/* Sub-headline */}
                     <p className="mt-6 text-lg sm:text-xl text-neutral-300 max-w-2xl leading-relaxed">
                         From constructing national infrastructure to manufacturing
-                        consumer electronics - SAT Holdings delivers excellence across
+                        consumer electricals - SAT Holdings delivers excellence across
                         engineering, manufacturing, and trading.
                     </p>
 

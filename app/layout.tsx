@@ -29,7 +29,7 @@ export const metadata: Metadata = {
             "Sri Lanka construction",
             "Sri Lanka engineering",
             "SAT Energy Solutions",
-            "SAT Electronics",
+            "SAT Electricals",
             "SAT Green Agro",
         ],
     }),

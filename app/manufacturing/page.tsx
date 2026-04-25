@@ -13,7 +13,7 @@ export const metadata: Metadata = createMetadata({
     title: "Rice Cooker Manufacturing in Sri Lanka",
     description: pageDescription,
     path: "/manufacturing",
-    keywords: ["rice cooker manufacturing Sri Lanka", "made in Sri Lanka appliances", "SAT Electronics"],
+    keywords: ["rice cooker manufacturing Sri Lanka", "made in Sri Lanka appliances", "SAT Electricals"],
 });
 
 const breadcrumbSchema = createBreadcrumbSchema([
@@ -68,7 +68,7 @@ export default function ManufacturingPage() {
                             <p className="text-neutral-600 leading-relaxed font-medium">
                                 SAT Holdings established Sri Lanka&apos;s first rice cooker
                                 manufacturing facility, marking a milestone in local consumer
-                                electronics production under SAT Electronics Pvt Ltd. Our
+                                electricals production under SAT Electricals Pvt Ltd. Our
                                 commitment to quality and reliability drives every product that
                                 leaves our factory floor.
                             </p>

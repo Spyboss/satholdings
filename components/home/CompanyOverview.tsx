@@ -22,7 +22,7 @@ export default function CompanyOverview() {
                     As the operator of Sri Lanka&apos;s first rice cooker manufacturing
                     facility, SAT Holdings is committed to local manufacturing excellence
                     and expanding the &ldquo;Made in Sri Lanka&rdquo; brand across
-                    consumer electronics and industrial products.
+                    consumer electricals and industrial products.
                 </p>
             </div>
         </SectionWrapper>

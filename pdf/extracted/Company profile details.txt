@@ -3,7 +3,7 @@
    •   About Us: Originally established as a leading engineering solutions provider for the Sri
        Lankan construction industry, SAT Holdings has successfully diversified. With over 5
        years of excellence, we have now expanded into international trade and local
-       manufacturing, bringing the same commitment to quality to household electronics and
+       manufacturing, bringing the same commitment to quality to household electricals and
        industrial imports.
    •   Vision: To be Sri Lanka’s most admired and trusted provider of professional engineering
        services and innovative consumer products.
@@ -19,7 +19,7 @@
               manufacturing facility in Sri Lanka. We are dedicated to localizing technology to
               provide durable, high-efficiency kitchen solutions for Sri Lankan homes.
    •   B. Import & Trading
-           o Electronic Household Items: Importing premium quality kitchen and home
+           o Electrical Household Items: Importing premium quality kitchen and home
               appliances, including Electric Kettles, Rice Cookers, and more.
            o Bathware: Sourcing elegant and durable bathware solutions for modern
               residential and commercial needs.
@@ -38,7 +38,7 @@
        is now applied across our manufacturing and import lines to ensure every product
        exceeds client expectations.
    •   State-of-the-Art Infrastructure: Continued investment in international-standard
-       machinery and now, advanced manufacturing technology for electronics.
+       machinery and now, advanced manufacturing technology for electricals.
    •   Proven Track Record: Over 21 major projects completed and 24+ corporate clients
        served.
 
@@ -53,7 +53,7 @@ Recommendations for new Website:
 
   1. Home Page: Feature a hero banner highlighting the "First Rice Cooker Manufacturing
      Project in Sri Lanka" alongside your construction legacy.
-  2. Product Catalog: Create a dedicated section for "SAT Electronics" (Rice Cookers,
+  2. Product Catalog: Create a dedicated section for "SAT Electricals" (Rice Cookers,
      Kettles) and SAT Aluminum /Bathware" with high-quality images.
   3. Project Gallery: Keep "Road Map" (Southern Highway projects, RDA works) to
      maintain your engineering credibility.
