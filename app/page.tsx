@@ -132,6 +132,12 @@ const milestones = [
             "/assets/gallery/2.jpg",
     },
     {
+        title: "SAT Green Agro incorporated",
+        date: "2024",
+        image:
+            "https://res.cloudinary.com/dthx4fxte/image/upload/v1777097113/8bba5f6f-0864-45cf-b291-9fa270915a0d-1_w12ceg.webp",
+    },
+    {
         title: "SAT Electricals rice cooker line launched",
         date: "2026",
         image:
@@ -455,7 +461,7 @@ export default function HomePage() {
                     <h3 className="text-center font-heading text-3xl font-extrabold uppercase text-primary sm:text-4xl">
                         Group Milestones
                     </h3>
-                    <div className="mt-10 grid gap-6 sm:grid-cols-3">
+                    <div className="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
                         {milestones.map((item) => (
                             <article key={item.title} className="group overflow-hidden rounded-2xl border border-neutral-100 bg-neutral-50 shadow-[0_4px_20px_rgb(0,0,0,0.02)] transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                                 <div className="overflow-hidden h-48 sm:h-40 lg:h-48">
