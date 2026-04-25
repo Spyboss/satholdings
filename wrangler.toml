@@ -1,12 +1,12 @@
 name = "satholdings"
 compatibility_date = "2024-04-19"
-pages_build_output_dir = ".next"
+pages_build_output_dir = "out"
 
 [vars]
 NEXT_PUBLIC_WEB3FORMS_KEY = ""
 
-[env.production]
-vars = {}
+[env.production.vars]
+NEXT_PUBLIC_WEB3FORMS_KEY = ""
 
 [env.production.d1]
 database = ""
