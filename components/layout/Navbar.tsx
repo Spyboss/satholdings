@@ -15,11 +15,12 @@ export default function Navbar() {
                     <Link href="/" className="shrink-0">
                         <div className="flex items-center gap-3">
                             <Image
-                                src="https://res.cloudinary.com/dthx4fxte/image/upload/v1773220134/Sat_Holdings_Transparent_qyjuzm.png"
+                                src="https://res.cloudinary.com/dthx4fxte/image/upload/f_auto,q_auto,w_200/v1773220134/Sat_Holdings_Transparent_qyjuzm.png"
                                 alt="SAT Holdings logo"
                                 width={240}
                                 height={240}
                                 className="h-16 w-auto sm:h-18"
+                                priority
                             />
                             <span className="sr-only">{COMPANY.name.replace(" Pvt Ltd", "")}</span>
                         </div>

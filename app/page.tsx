@@ -35,12 +35,12 @@ const heroPanels = [
     {
         title: "Electricals",
         image:
-            "https://res.cloudinary.com/dthx4fxte/image/upload/v1772850033/E-LK_1776x1080-888x500-c-default_ia3ttv.jpg",
+            "https://res.cloudinary.com/dthx4fxte/image/upload/f_auto,q_auto,w_800/v1772850033/E-LK_1776x1080-888x500-c-default_ia3ttv.jpg",
     },
     {
         title: "Construction",
         image:
-            "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80",
+            "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
     },
     {
         title: "Energy",
@@ -49,7 +49,7 @@ const heroPanels = [
     {
         title: "Agro",
         image:
-            "https://res.cloudinary.com/dthx4fxte/image/upload/v1772847556/Agri_u4loii.jpg",
+            "https://res.cloudinary.com/dthx4fxte/image/upload/f_auto,q_auto,w_800/v1772847556/Agri_u4loii.jpg",
     },
 ];
 
@@ -58,7 +58,7 @@ const portfolioCards = [
         title: "SAT Electricals (Pvt) Ltd",
         subtitle: "Local appliance manufacturing for Sri Lankan households",
         cta: "View Electricals",
-        logo: "https://res.cloudinary.com/dthx4fxte/image/upload/v1777109880/Image_lq49pi.png",
+        logo: "https://res.cloudinary.com/dthx4fxte/image/upload/f_auto,q_auto,w_400/v1777109880/Image_lq49pi.png",
         href: "/products",
         accent: "#0b76d1",
     },
@@ -66,7 +66,7 @@ const portfolioCards = [
         title: "SAT Holdings (Pvt) Ltd",
         subtitle: "Engineering, infrastructure delivery, and strategic trading",
         cta: "View Construction",
-        logo: "https://res.cloudinary.com/dthx4fxte/image/upload/v1773220134/Sat_Holdings_Transparent_qyjuzm.png",
+        logo: "https://res.cloudinary.com/dthx4fxte/image/upload/f_auto,q_auto,w_400/v1773220134/Sat_Holdings_Transparent_qyjuzm.png",
         href: "/engineering",
         accent: "#ef8f22",
     },
@@ -74,7 +74,7 @@ const portfolioCards = [
         title: "SAT Energy Solutions Pvt Ltd",
         subtitle: "Grid-connected solar infrastructure and energy delivery",
         cta: "View Energy",
-        logo: "https://res.cloudinary.com/dtnzmhngi/image/upload/v1772171307/WhatsApp_Image_2026-02-27_at_11.08.38_ap0zlp.jpg",
+        logo: "https://res.cloudinary.com/dtnzmhngi/image/upload/f_auto,q_auto,w_400/v1772171307/WhatsApp_Image_2026-02-27_at_11.08.38_ap0zlp.jpg",
         href: "/projects",
         accent: "#11a86a",
     },
@@ -82,7 +82,7 @@ const portfolioCards = [
         title: "SAT Green Agro (Pvt) Ltd",
         subtitle: "Technology-led agriculture and food security initiatives",
         cta: "View Agro",
-        logo: "https://res.cloudinary.com/dtnzmhngi/image/upload/v1772171307/img11_z2uvkb.jpg",
+        logo: "https://res.cloudinary.com/dtnzmhngi/image/upload/f_auto,q_auto,w_400/v1772171307/img11_z2uvkb.jpg",
         href: "/contact",
         accent: "#74c63c",
     },
@@ -123,7 +123,7 @@ const milestones = [
         title: "SAT Holdings Incorporated",
         date: "2017",
         image:
-            "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80",
+            "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80",
     },
     {
         title: "SAT Energy founded and Tangalle solar plant connected",
@@ -135,13 +135,13 @@ const milestones = [
         title: "SAT Green Agro incorporated",
         date: "2024",
         image:
-            "https://res.cloudinary.com/dthx4fxte/image/upload/v1777097113/8bba5f6f-0864-45cf-b291-9fa270915a0d-1_w12ceg.webp",
+            "https://res.cloudinary.com/dthx4fxte/image/upload/f_auto,q_auto,w_600/v1777097113/8bba5f6f-0864-45cf-b291-9fa270915a0d-1_w12ceg.webp",
     },
     {
         title: "SAT Electricals rice cooker line launched",
         date: "2026",
         image:
-            "https://res.cloudinary.com/dthx4fxte/image/upload/v1772846043/news151214-1_nuw1bg.jpg",
+            "https://res.cloudinary.com/dthx4fxte/image/upload/f_auto,q_auto,w_600/v1772846043/news151214-1_nuw1bg.jpg",
     },
 ];
 

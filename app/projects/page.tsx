@@ -69,7 +69,7 @@ export default function ProjectsPage() {
             <SectionWrapper>
                 <div className="max-w-6xl mx-auto">
                     <div className="rounded-[2.5rem] bg-neutral-900 px-6 py-12 sm:px-12 sm:py-16 relative overflow-hidden text-center text-white shadow-2xl">
-                        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center opacity-20" />
+                        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80')] bg-cover bg-center opacity-20" />
                         <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 to-transparent" />
 
                         <div className="relative z-10 max-w-3xl mx-auto">
