@@ -8,13 +8,13 @@ import { createMetadata } from "@/lib/metadata";
 import { createBreadcrumbSchema, createCollectionPageSchema, createServiceSchema } from "@/lib/structuredData";
 
 const pageDescription =
-    "Browse SAT Holdings products including SAT Electricals rice cookers and kettles, aluminum profiles, and bathware for Sri Lankan homes and projects.";
+    "Browse SAT Holdings products including SAT Electricals rice cookers and kettles, and aluminum profiles for Sri Lankan homes and projects.";
 
 export const metadata: Metadata = createMetadata({
     title: "Products, Import and Trading",
     description: pageDescription,
     path: "/products",
-    keywords: ["SAT rice cooker", "aluminum profiles Sri Lanka", "bathware Sri Lanka", "import trading Sri Lanka"],
+    keywords: ["SAT rice cooker", "aluminum profiles Sri Lanka", "import trading Sri Lanka"],
 });
 
 const breadcrumbSchema = createBreadcrumbSchema([
@@ -112,7 +112,7 @@ export default function ProductsPage() {
                 </div>
             </SectionWrapper>
 
-            {PRODUCT_CATEGORIES.map((category, index) => {
+            {PRODUCT_CATEGORIES.filter((cat) => cat.name !== "SAT Bathware").map((category, index) => {
                 const getIcon = (catName: string, prodTitle: string) => {
                     if (catName.includes("Electricals")) {
                         return prodTitle.includes("Rice") ? "🍚" : "🫖";

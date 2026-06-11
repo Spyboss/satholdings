@@ -67,7 +67,7 @@ export const DIVISIONS: Division[] = [
     {
         slug: "trading",
         title: "Import & Trading",
-        tagline: "Electricals, aluminum profiles, and bathware, sourced globally.",
+        tagline: "Electricals and aluminum profiles, sourced globally.",
         href: "/products",
         icon: "📦",
     },
@@ -227,7 +227,7 @@ export const PROJECTS: Project[] = [
 export const FAQS = [
     {
         question: "What services does SAT Holdings provide?",
-        answer: "SAT Holdings operates in three main divisions: Engineering & Construction (building construction, road construction, soil protection, and machinery hiring), Manufacturing (Sri Lanka's first rice cooker manufacturing facility), and Import & Trading (electricals, aluminum profiles, and bathware products).",
+        answer: "SAT Holdings operates in three main divisions: Engineering & Construction (building construction, road construction, soil protection, and machinery hiring), Manufacturing (Sri Lanka's first rice cooker manufacturing facility), and Import & Trading (electricals and aluminum profiles).",
     },
     {
         question: "Where is SAT Holdings located?",
@@ -259,7 +259,7 @@ export const FAQS = [
     },
     {
         question: "Does SAT Holdings offer product warranties?",
-        answer: "Yes, all SAT products including rice cookers, electricals, and bathware come with manufacturer warranties. Specific warranty terms vary by product - contact us for details.",
+        answer:     "Yes, all SAT products including rice cookers and electricals come with manufacturer warranties. Specific warranty terms vary by product - contact us for details.",
     },
 ] as const;
 
